@@ -1,4 +1,4 @@
-.navButton{
+.buttonBase{
     position: relative;
     display: flex;
     border: var(--debugBorderSize) solid var(--debugBorderClr);
@@ -7,4 +7,5 @@
     text-align: center; /*text paragraph is centered style*/
     text-decoration: none;
     color: var(--fontClr);
+    cursor: pointer;
 }

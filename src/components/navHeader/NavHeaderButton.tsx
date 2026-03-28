@@ -1,13 +1,14 @@
 import './NavHeaderButton.css';
-import type { NavButtonProps } from '../NavButtonBase.tsx';
-import NavButton from '../NavButtonBase.tsx';
+import type { NavButtonProps } from '../NavButton.tsx';
+import NavButton from '../NavButton.tsx';
+import TText from '../TText.tsx';
 
 type NavHeaderButtonProps = {
     highlightRef: React.RefObject<HTMLDivElement | null>;
-    buttonTitle: string;
+    titleLocKey: string;//
 } & NavButtonProps
 
-function NavHeaderButton( { highlightRef, buttonTitle, ...rest}: NavHeaderButtonProps ) {
+function NavHeaderButton( { highlightRef, titleLocKey, ...rest}: NavHeaderButtonProps ) {
 
     function highlightButton(event : React.MouseEvent<HTMLAnchorElement> ){
         if( highlightRef.current == null ){return;}
@@ -37,7 +38,9 @@ function NavHeaderButton( { highlightRef, buttonTitle, ...rest}: NavHeaderButton
             onMouseEnter = {highlightButton}
             className = "navBarButton"
             >
-                <h2 className="navBarButtonText">{buttonTitle}</h2>
+                <h2 className="navBarButtonText">
+                    <TText locKey={titleLocKey} />
+                </h2>
         </NavButton>
     )
 }

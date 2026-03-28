@@ -27,7 +27,7 @@
 .aboutGroupText{
   width: 100%;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
-  
+  margin: 0;
 }
 
 .aboutGroupButtonGroup{

@@ -1,23 +1,26 @@
 import './GamesEntryButton.css'
 //TODO: get this stuff from the root so renaming and moving things is easier
-import type {NavButtonProps} from '../../NavButtonBase.tsx'
-import NavButtonBase from '../../NavButtonBase.tsx'
+import type {NavButtonProps} from '../../NavButton.tsx'
+import NavButton from '../../NavButton.tsx'
+import TText from '../../TText.tsx'
 
 type GamesEntryProps = {
-    yearSpan: string;
-    gameTitle: string;
+    yearStart: number;
+    yearEnd?: number;
+    gameLocKey: string;
 } & NavButtonProps
 
-function GamesEntry( {yearSpan, gameTitle, ...rest} : GamesEntryProps){
+function GamesEntry( {yearStart, yearEnd, gameLocKey, ...rest} : GamesEntryProps){
     
+    const yearEndStr = yearEnd? yearEnd : <TText locKey='PRESENT'/>;
     return(
-        <NavButtonBase
+        <NavButton
             {...rest}
             className = "gamesEntryGroup"
             >
-                <div className="EntryGroupTitle"> {yearSpan} </div>
-                <div className="gamesEntryGroupBox"> {gameTitle} </div>
-        </NavButtonBase>
+                <div className="EntryGroupTitle">{yearStart} - {yearEndStr}</div>
+                <div className="gamesEntryGroupBox"><TText locKey={gameLocKey}/></div>
+        </NavButton>
     )
 }
 

@@ -3,6 +3,7 @@
   border: var(--debugBorderSize) solid var(--debugBorderClr);
   max-height: 50px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navBar{
