@@ -1,8 +1,15 @@
 
-TODO:
-- setup with github
+TODO NEXT:
 
-- localiation for spanish -> earlier the better!
+- basic page for info, text, and embedded images or videos
+    - paragraphs, headers, banners, videos, side to side images
+    - eventually an image grid browser interface for art stuff, can start with most basic image browser I can find to get site up and running
+- fade transitions between pages
+- game page highighting and click animation
+
+________________________
+
+TODO LATER:
 
 - find a way to get the root directory for out of folder references so that we don't break paths when I move thigns around
 - nav bar:
@@ -10,21 +17,23 @@ TODO:
     - highlight should go away when not hovering
     - flicker button on click effect
 - page loading effect?
-- fade transitions between pages
-- shrink size of everything
-- basic page for info, text, and embedded images or videos
-    - paragraphs, headers, banners, videos, side to side images
-    - eventually an image grid browser interface for art stuff, can start with most basic image browser I can find to get site up and running
-- make game button input year start and end to not worry about direct formatting
+- shrink size of everythingdirect formatting
 - game page:
-    - spacing between line in the middle
-    - highlighting and click animation
+    - spacing between line in the middle during narrow windows
 
 - game idea:
     - wall jumper game? jump either in place or across to the next wall. Can slide up the longer you hold, dodge obstacles
     - highscore you can register with log in with a profile pic, something simple
     - multiplayer with friend to see each other race at the same time, also simple, just streaming inputs
 
+________________________
+
+LOG:
+
+Saturday March 28th, 2026
+- Got git setup with lazy git! Prettttty nice
+- Added localization libraries and switched all of that over
+- base classed buttons further from nav buttons for any kind of button with proper css styles
 
 Friday March 27th, 2026
 - got basically everything set up with components: made the dedicated pages, dedicated button base classes and sub classes, used react router for navigation, looking good!
