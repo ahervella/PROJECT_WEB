@@ -1,0 +1,44 @@
+:root{
+  --debugBorderClr: rgb(255, 0, 0, .5);
+  --debugBorderSize: 1px;
+  --fontClr: white;
+}
+
+@font-face{
+  src: url(assets/VT323.ttf);
+  font-family: VT323;
+}
+
+body{
+  font-family: VT323, Arial, Helvetica, sans-serif;
+  color: var(--fontClr);
+  background-color: black;
+  font-weight: normal;
+}
+
+main{
+  margin-left: 100px;
+  margin-right: 100px;
+  border: var(--debugBorderSize) solid var(--debugBorderClr);
+  
+  font-size: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.pageMargins{
+  max-width: 1200px;
+  margin: 0 auto; /*aka, top and bottom zero, left and right fill automatically based on width*/
+  padding: 20px 120px;
+}
+
+
+

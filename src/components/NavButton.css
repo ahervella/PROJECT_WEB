@@ -1,0 +1,10 @@
+.navButton{
+    position: relative;
+    display: flex;
+    border: var(--debugBorderSize) solid var(--debugBorderClr);
+    justify-content: center; /*horizontal anchor centered*/
+    align-items:center; /*vertical anchor centered*/
+    text-align: center; /*text paragraph is centered style*/
+    text-decoration: none;
+    color: var(--fontClr);
+}
