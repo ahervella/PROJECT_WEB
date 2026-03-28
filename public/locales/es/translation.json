@@ -1,0 +1,14 @@
+{
+    "ABOUT": "información",
+    "LINKEDIN": "linkedIn",
+    "GITHUB": "gitHub",
+    "GAMES": "videojuegos",
+    "ART": "arte",
+    "MUSIC": "música",
+    
+    "ABOUT_BODY": "¡Hola!\n\nSoy Alejandro, vengo en paz, y soy ingeniero y desarrollador de juegos (y aveces artista). Amo el mundo de computación, arte, tecnología retro, gente y por supuesto, videojuegos.\n\nPor favor no dudes en ponerte en contacto para cualquier cosa.\n\n¡Nos vemos en el salón de juegos!\n\nahervella@me.com",
+
+    "PRESENT": "presente",
+    "PICO_PROJ": "Proyecto con Pico-8",
+    "WEB_PROJ": "Proyecto de Web"
+}

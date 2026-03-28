@@ -1,0 +1,14 @@
+{
+    "ABOUT": "about",
+    "LINKEDIN": "linkedIn",
+    "GITHUB": "gitHub",
+    "GAMES": "videogames",
+    "ART": "art",
+    "MUSIC": "music",
+
+    "ABOUT_BODY": "Hello!\n\nMy name is Alejandro, I come in peace, and I'm an engineer and game developer (and passtime artist). I love all things computers, art, retro technology, people, and of course, videogames.\n\nPlease feel free to reach out about anything\n\nI'll see you at the arcade!\n\nahervella@me.com",
+
+    "PRESENT": "present",
+    "PICO_PROJ": "Pico-8 Project",
+    "WEB_PROJ": "Web Game Project"
+}
