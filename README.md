@@ -1,73 +1,22 @@
-# React + TypeScript + Vite
+# PROJ_WEB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the work-in-progress for my new personal website! My current site, [which you can see here](https://www.alejandrohervella.com/), was something I created years ago with Wix. As a means of expandanding my software engineering skill set, the goal of this project is to:
 
-Currently, two official plugins are available:
+1) Make a new personal website for hosting my portfolio in English and Spanish
+2) Use modern robust industry standards and tech stacks even if it's overkill for the sake of learning
+3) Understand the details and intricacies of each new language, each piece of the tech stack, browser interactions, and web development history and evolution
+4) Implement a basic in-browser game with backend features such as hosting a leaderboard, hosting user accounts, and possibly hosting multiplayer features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+So far, I've been using basics such as HTML, CSS, React, React Router, Vite, and Typescript to start with the first three goals. All the while, I've been taking the time to understand how and why each piece works, why it exists, and why it's needed, commonly used, and still in practice.
 
-## React Compiler
+## Website Portfolio
+My plan is to have a similar layout of information that is shown on [my current site](https://www.alejandrohervella.com/) including an about page, a way to show off profesional and personal videogame projects, as well as my art and music works I've done on the side.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I also want to make sure it is a smooth and interactive experience like many modern websites to be able to learn more about styling and front end development. Below is how it is looking so far:
 
-## Expanding the ESLint configuration
+<img width="422" height="238" alt="Screenshot 2026-03-31 at 7 09 05 PM" src="https://github.com/user-attachments/assets/b647e1cc-023e-4a45-aaf6-22e2991bc1e6" /> <img width="422" height="238" alt="Screenshot 2026-03-31 at 7 09 29 PM" src="https://github.com/user-attachments/assets/fe0bb28f-2464-46b5-9e68-ca4a6046ba34" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Built-in Game Project
+While still in the works, and knowing how long gamedevelopment can take, my plan is to create a very very simple arcade game with soley to practice implementing back end tech. My immediate goal is to make back end service for hosting player accounts that holds very basic info such as a profile pic, a gamer tag, and the player's high score. I hope to use modern back end services even for a small need in order to meet the last two goals. The game will be somewhere on the front page or in it's own site tab.
