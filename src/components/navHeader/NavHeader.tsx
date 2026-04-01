@@ -36,7 +36,7 @@ function NavHeader() {
 
                     <HeaderButton highlightRef={highlightRef} titleLocKey="GAMES" urlPath={ROUTES.GAMES} isExternalLink={false} />
 
-                    <HeaderButton highlightRef={highlightRef} titleLocKey="ART" urlPath={ROUTES.GAMES} isExternalLink={false} />
+                    <HeaderButton highlightRef={highlightRef} titleLocKey="ART" urlPath={ROUTES.ART} isExternalLink={false} />
 
                     <HeaderButton highlightRef={highlightRef} titleLocKey="MUSIC" urlPath={ROUTES.MUSIC} isExternalLink={false} />
                 </nav>

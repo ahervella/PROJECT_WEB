@@ -2,13 +2,16 @@ import './NavHeaderButton.css';
 import type { NavButtonProps } from '../NavButton.tsx';
 import NavButton from '../NavButton.tsx';
 import TText from '../TText.tsx';
+import {useEffect} from "react"
+
+import { useLocation } from "react-router-dom";
 
 type NavHeaderButtonProps = {
     highlightRef: React.RefObject<HTMLDivElement | null>;
-    titleLocKey: string;//
+    titleLocKey: string;
 } & NavButtonProps
 
-function NavHeaderButton( { highlightRef, titleLocKey, ...rest}: NavHeaderButtonProps ) {
+function NavHeaderButton( { highlightRef, titleLocKey, urlPath, ...rest}: NavHeaderButtonProps ) {
 
     function highlightButton(event : React.MouseEvent<HTMLAnchorElement> ){
         if( highlightRef.current == null ){return;}
@@ -22,23 +25,38 @@ function NavHeaderButton( { highlightRef, titleLocKey, ...rest}: NavHeaderButton
 
         highlightRef.current.style.width = `${buttonRect.width}px`;
 
-        highlightRef.current.style.height = `${(buttonRect.height - buttonTextRect.height)/2 + buttonTextRect.height}px`;
+        //highlightRef.current.style.height = `${(buttonRect.height - buttonTextRect.height)/2 + buttonTextRect.height}px`;
         
+        const h = buttonRect.height - ((buttonRect.height - buttonTextRect.height)/2 + buttonTextRect.height)
+        highlightRef.current.style.height = `${h}px`;
+
         highlightRef.current.style.transform = `
             translate(
                 ${btn.offsetLeft}px,
-                ${btn.offsetTop}px
+                ${btn.offsetHeight - h}px
             )
         `;
     }
 
+    function clearHighlight(event: React.MouseEvent<HTMLAnchorElement>){
+        if( highlightRef.current == null ){return;}
+
+        highlightRef.current.style.height = "0";
+    }
+
+
+    const currLocation = useLocation();
+    useEffect( ()=> {console.log (currLocation)}, [currLocation]);
+
     return(
-        <NavButton
+        <NavButton        
             {...rest}
             onMouseEnter = {highlightButton}
-            className = "navBarButton"
+            onMouseLeave = {clearHighlight}
+            urlPath={urlPath}
+            className = {`navBarButton ${ currLocation.pathname == urlPath ? "active" : ""}`}
             >
-                <h2 className="navBarButtonText">
+                <h2 className = {`navBarButtonText ${ currLocation.pathname == urlPath ? "active" : ""}`}>
                     <TText locKey={titleLocKey} />
                 </h2>
         </NavButton>

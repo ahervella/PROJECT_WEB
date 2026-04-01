@@ -9,6 +9,10 @@
   padding-right: 20px;
 }
 
+.navBarButton.active {
+  background: white;
+}
+
 h2.navBarButtonText{
   display: flex;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
@@ -18,4 +22,7 @@ h2.navBarButtonText{
   text-align: center; /*text paragraph is centered style*/
   margin-left: 2px;
   margin-right: 2px;
+}
+.navBarButtonText.active{
+  color: black;
 }
