@@ -1,6 +1,6 @@
 :root{
-  --debugBorderClr: rgb(255, 0, 0, .5);
-  --debugBorderSize: 1px;
+  --debugBorderClr: rgb(255, 0, 0, 0.5);
+  --debugBorderSize: 0px;
   --fontClr: white;
 }
 

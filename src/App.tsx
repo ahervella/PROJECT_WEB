@@ -1,25 +1,27 @@
-import { useState } from 'react'
 import './App.css'
 import NewHeader from './components/navHeader/NavHeader.tsx'
 import About from './components/pages/about/About.tsx'
 import { ROUTES } from './routes.ts';
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Games from "./components/pages/games/Games";
+import { AnimatePresence } from 'framer-motion';
 //import Art from "./pages/Art";
 //import Music from "./pages/Music";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
 
   return (
-    <Router>
+
       <div className="pageMargins">
             <header>
                 <NewHeader />
             </header>
             <main>
-                <Routes>
+              {/* Allowing us to use a unique key for key, which is generated at random. Since we are changing the tree, we also need to tell it what location we are in now since that can't be auto reconciled anymore. Changing the tree lets us control the tree destruction time line with AnimatePresence before we make the new tree*/}
+              <AnimatePresence mode="wait">
+                <Routes location={location} key={location.pathname}>
                   <Route path={ROUTES.ABOUT} element={<About />} />
                   <Route path={ROUTES.GAMES} element={<Games />} />
                   {/*
@@ -27,10 +29,9 @@ function App() {
                   <Route path={ROUTES.MUSIC} element={<Music />} />
                    */}
                 </Routes>
+              </AnimatePresence>
             </main>
       </div>
-    </Router>
-
   )
 }
 
