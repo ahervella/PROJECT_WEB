@@ -1,5 +1,11 @@
 
+
 TODO NEXT:
+- for claude code and adding a back button at each info page (wip)
+
+I would like to add a back button feature that can be reused across the different pages I plan to implement. The back button will appear just under the nav bar, and will be justified to the right. I would like it to be it's own component that lives in the pages component folder (within its own folder to house the tsx and css file).       
+
+
 
 - basic page for info, text, and embedded images or videos
     - paragraphs, headers, banners, videos, side to side images
@@ -48,3 +54,8 @@ Saturday March 28th, 2026
 Friday March 27th, 2026
 - got basically everything set up with components: made the dedicated pages, dedicated button base classes and sub classes, used react router for navigation, looking good!
 - Today's song: Golpes Bajos - CLUBZ
+
+Thursday March 28th, 2026
+- Finished adding a generic info page that will be used across site items
+- Fixed what I thought was the way to add sub routed pages but that's only for adding content ontop of the parent's page, not for if I want to just rerender the entier page without referencing the parent
+- started using and understanding claude code's limitations and best practices, implemented with project
