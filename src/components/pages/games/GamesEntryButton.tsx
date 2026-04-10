@@ -1,8 +1,8 @@
 import './GamesEntryButton.css'
 //TODO: get this stuff from the root so renaming and moving things is easier
-import type {NavButtonProps} from '../../NavButton.tsx'
-import NavButton from '../../NavButton.tsx'
-import TText from '../../TText.tsx'
+import type {NavButtonProps} from '$comps/NavButton.tsx'
+import NavButton from '$comps/NavButton.tsx'
+import TText from '$comps/TText.tsx'
 
 type GamesEntryProps = {
     yearStart: number;

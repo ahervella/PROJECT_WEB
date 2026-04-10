@@ -2,7 +2,7 @@ import {useRef} from "react";
 import './NavHeader.css';
 import HeaderButton from './NavHeaderButton.tsx'
 import HeaderLangButton from './NavHeaderLangButton.tsx'
-import {ROUTES} from '../../routes.ts'
+import {ROUTES} from '$src/routes.ts'
 
 function NavHeader() {
     const highlightRef = useRef<HTMLDivElement | null>(null)

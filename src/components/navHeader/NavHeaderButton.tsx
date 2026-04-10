@@ -1,7 +1,7 @@
 import './NavHeaderButton.css';
-import type { NavButtonProps } from '../NavButton.tsx';
-import NavButton from '../NavButton.tsx';
-import TText from '../TText.tsx';
+import type { NavButtonProps } from '$comps/NavButton.tsx';
+import NavButton from '$comps/NavButton.tsx';
+import TText from '$comps/TText.tsx';
 import {useEffect} from "react"
 
 import { useLocation } from "react-router-dom";

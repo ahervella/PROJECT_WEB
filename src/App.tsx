@@ -1,10 +1,13 @@
 import './App.css'
-import NewHeader from './components/navHeader/NavHeader.tsx'
-import About from './components/pages/about/About.tsx'
+import NewHeader from '$comps/navHeader/NavHeader.tsx'
+import About from '$comps/pages/about/About.tsx'
 import { ROUTES } from './routes.ts';
 
 import { Routes, Route, useLocation } from "react-router-dom";
-import Games from "./components/pages/games/Games";
+
+import Games from "$comps/pages/games/Games";
+import GamesPageEOE from "$comps/pages/games/eoe/GamesPageEOE"
+
 import { AnimatePresence } from 'framer-motion';
 //import Art from "./pages/Art";
 //import Music from "./pages/Music";

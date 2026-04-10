@@ -1,7 +1,7 @@
 import './Games.css'
 import GamesEntryButton from './GamesEntryButton.tsx'
-import {ROUTES} from './../../../routes.ts'
-import { PageVariants } from '../../../constants.ts';
+import {ROUTES} from '$src/routes.ts'
+import { PageVariants } from '$src/constants.ts';
 
 import { delay, easeIn, easeInOut, motion } from "framer-motion";
 

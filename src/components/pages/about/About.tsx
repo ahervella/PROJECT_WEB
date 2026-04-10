@@ -1,6 +1,6 @@
 import './About.css'
-import profileImg from './../../../assets/profile.jpg'
-import TText from '../../TText';
+import profileImg from '$assets/profile.jpg'
+import TText from '$comps/TText';
 import { motion } from "framer-motion";
 
 import { PageVariants } from '../../../constants.ts';
