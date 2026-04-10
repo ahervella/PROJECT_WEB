@@ -3,7 +3,8 @@ import GamesEntryButton from './GamesEntryButton.tsx'
 import {ROUTES} from '$src/routes.ts'
 import { PageVariants } from '$src/constants.ts';
 
-import { delay, easeIn, easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { Routes } from 'react-router-dom';
 
 function Games(){
 
@@ -19,8 +20,8 @@ function Games(){
                         yearStart={2023}
                         yearEnd={2026}
                         gameLocKey='Echoes of Elysium'
-                        isExternalLink={true}
-                        urlPath={ROUTES.EOE}
+                        isExternalLink={false}
+                        urlPath={ROUTES.GAMES + ROUTES.GAMES_EOE}
                     />
 
                     <GamesEntryButton

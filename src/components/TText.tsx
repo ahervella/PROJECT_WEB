@@ -3,14 +3,17 @@ import './TText.css'
 
 type TTextProps = {
     locKey: string;
+    className?: string;
 }
 
-function TText( {locKey} : TTextProps ){
-
+export function getText( locKey: string ){
     const {t} = useTranslation();
+    return t(locKey);
+}
 
+function TText( {locKey, className} : TTextProps ){
     return(
-        <span className="translationText">{t(locKey)}</span>
+        <span className={`translationText ${className || ""} `}>{getText(locKey)}</span>
     )
 }
 

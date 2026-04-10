@@ -1,0 +1,30 @@
+.gamesPageTitle{
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+.gamesPageGroup{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: var(--debugBorderSize) solid var(--debugBorderClr);
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.gamesPageGroup.alternated{
+  flex-direction: row-reverse;
+}
+
+.gamesPageGroupImg{
+  min-width: 300px;
+  max-width: 300px;
+  border: var(--debugBorderSize) solid var(--debugBorderClr);
+}
+
+.gamesPageGroupText{
+  width: 100%;
+  border: var(--debugBorderSize) solid var(--debugBorderClr);
+  margin: 0;
+}

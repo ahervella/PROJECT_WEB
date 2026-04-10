@@ -3,6 +3,7 @@ import type { NavButtonProps } from '$comps/NavButton.tsx';
 import NavButton from '$comps/NavButton.tsx';
 import TText from '$comps/TText.tsx';
 import {useEffect} from "react"
+import {ROUTES} from '$src/routes.ts'
 
 import { useLocation } from "react-router-dom";
 
@@ -48,15 +49,19 @@ function NavHeaderButton( { highlightRef, titleLocKey, urlPath, ...rest}: NavHea
     const currLocation = useLocation();
     useEffect( ()=> {console.log (currLocation)}, [currLocation]);
 
+    const isActive = urlPath == ROUTES.ABOUT ?
+    currLocation.pathname == urlPath :
+    currLocation.pathname.startsWith(urlPath);
+
     return(
-        <NavButton        
+        <NavButton
             {...rest}
             onMouseEnter = {highlightButton}
             onMouseLeave = {clearHighlight}
             urlPath={urlPath}
-            className = {`navBarButton ${ currLocation.pathname == urlPath ? "active" : ""}`}
+            className = {`navBarButton ${ isActive ? "active" : ""}`}
             >
-                <h2 className = {`navBarButtonText ${ currLocation.pathname == urlPath ? "active" : ""}`}>
+                <h2 className = {`navBarButtonText ${ isActive ? "active" : ""}`}>
                     <TText locKey={titleLocKey} />
                 </h2>
         </NavButton>

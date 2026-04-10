@@ -2,7 +2,15 @@ export const ROUTES = {
     ABOUT: "/",
     LINKEDIN: "https://www.linkedin.com/in/alejandro-hervella/",
     GITHUB: "https://github.com/ahervella",
-    GAMES: "/games",
+
+    GAMES: "/games/",
+    GAMES_EOE: "eoe",
+    GAMES_GOTC: "/gotc",
+    GAMES_WEB: "/proj-web",
+    GAMES_PICO8: "/proj-pico8",
+    GAMES_AAA: "/aaa",
+    GAMES_LUN: "/lun",
+    
     ART: "/art",
     MUSIC: "/music",
     EOE: "https://www.echoes.games/",

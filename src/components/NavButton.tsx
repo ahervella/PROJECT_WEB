@@ -11,10 +11,15 @@ export type NavButtonProps = {
 function NavButton( { isExternalLink, urlPath, onClick, ...rest } : NavButtonProps ){
     const navigate = useNavigate();
 
+    function navToPage(url : string){
+        console.log("navigating to page: " + url);
+        navigate( url );
+    }
+
     return(
         <ButtonBase
             {...rest}
-            onClick = { onClick? onClick : (isExternalLink ? undefined : () => navigate(urlPath) ) } 
+            onClick = { onClick? onClick : (isExternalLink ? undefined : () => navToPage(urlPath) ) } 
             target = {isExternalLink ? "_blank" : "_self" }
             href = { isExternalLink ? urlPath : undefined }
             />
