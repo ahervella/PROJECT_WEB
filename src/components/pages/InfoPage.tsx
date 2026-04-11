@@ -1,10 +1,10 @@
-import './GamesPage.css'
+import './InfoPage.css'
 import {PageVariants} from '$src/constants.ts'
 import { motion } from "framer-motion"
 import React from 'react'
 import TText, { getText } from '$comps/TText.tsx'
 
-export type GamesPageProps = {
+export type InfoPageProps = {
     titleLocKey: string;
     imgTextGroups: ImgTextGroupProps[];
 }
@@ -16,7 +16,7 @@ export type ImgTextGroupProps = {
 }
 
 
-function GamesPage( {titleLocKey, imgTextGroups} : GamesPageProps ){
+function InfoPage( {titleLocKey, imgTextGroups} : InfoPageProps ){
 
     function populateGroups(){
 
@@ -26,13 +26,13 @@ function GamesPage( {titleLocKey, imgTextGroups} : GamesPageProps ){
         for( let i: number = 0; i < imgTextGroups.length; i++){
             entry = imgTextGroups[i];
             elements.push(
-                <div className={"gamesPageGroup" + (alternated ? " alternated" : "") }>
+                <div className={"infoPageGroup" + (alternated ? " alternated" : "") }>
                     <img
                         src={entry.img}
                         alt={ getText(entry.imgTitleLocKey) }
-                        className="gamesPageGroupImg" />
+                        className="infoPageGroupImg" />
                         
-                    <p className="gamesPageGroupText">
+                    <p className="infoPageGroupText">
                         <TText locKey={entry.textLocKey}/>
                     </p>
                 </div>
@@ -47,11 +47,11 @@ function GamesPage( {titleLocKey, imgTextGroups} : GamesPageProps ){
     return(
         <motion.div variants={PageVariants} initial="initial" animate="enter">
 
-            <TText className="gamesPageTitle" locKey={titleLocKey} />
+            <TText className="infoPageTitle" locKey={titleLocKey} />
             {populateGroups()}
         </motion.div>
 
     )
 }
 
-export default GamesPage
+export default InfoPage

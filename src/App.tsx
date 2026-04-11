@@ -6,7 +6,7 @@ import { ROUTES } from './routes.ts';
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import Games from "$comps/pages/games/Games";
-import GamesPageEOE from "$comps/pages/games/eoe/GamesPageEOE"
+import GamesEOE from "$comps/pages/games/eoe/GamesEOE"
 
 import { AnimatePresence } from 'framer-motion';
 //import Art from "./pages/Art";
@@ -27,7 +27,7 @@ function App() {
                 <Routes location={location} key={location.pathname}>
                   <Route path={ROUTES.ABOUT} element={<About />}/>
                   <Route path={ROUTES.GAMES} element={<Games />}/>
-                  <Route path={ROUTES.GAMES + ROUTES.GAMES_EOE} element={<GamesPageEOE />}/>
+                  <Route path={ROUTES.GAMES + ROUTES.GAMES_EOE} element={<GamesEOE />}/>
 
                   {/* 
                   <Route path={ROUTES.GAMES_GOTC} element={<GamesPageGOTC />}/>

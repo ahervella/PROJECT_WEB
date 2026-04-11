@@ -1,10 +1,10 @@
-.gamesPageTitle{
+.infoPageTitle{
   display: block;
   text-decoration: underline;
   margin-bottom: 40px;
 }
 
-.gamesPageGroup{
+.infoPageGroup{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -13,17 +13,17 @@
   margin-bottom: 80px;
 }
 
-.gamesPageGroup.alternated{
+.infoPageGroup.alternated{
   flex-direction: row-reverse;
 }
 
-.gamesPageGroupImg{
+.infoPageGroupImg{
   min-width: 300px;
   max-width: 300px;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
 }
 
-.gamesPageGroupText{
+.infoPageGroupText{
   width: 100%;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
   margin: 0;

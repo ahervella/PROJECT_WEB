@@ -1,10 +1,10 @@
 import { ROUTES } from '../../../../routes.ts'
-import GamesPage from '../GamesPage.tsx'
-import type {ImgTextGroupProps} from '../GamesPage.tsx'
+import GamesPage from '../../InfoPage.tsx'
+import type {ImgTextGroupProps} from '../../InfoPage.tsx'
 import eoeTall from '$assets/games/eoe/eoe-tall.jpg'
 import eoeScreenshot from '$assets/games/eoe/eoe-screenshot.png'
 
-function GamesPageEOE(){
+function GamesEOE(){
     const groups : ImgTextGroupProps[] = [
         {
             img : eoeTall,
@@ -23,4 +23,4 @@ function GamesPageEOE(){
     )
 }
 
-export default GamesPageEOE
+export default GamesEOE
