@@ -20,18 +20,6 @@ main{
   margin-left: 100px;
   margin-right: 100px;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
-  
-  font-size: 2rem;
-}
-
-h1{
-  font-size: 3rem;
-  font-weight: normal;
-}
-
-h2{
-  font-size: 2rem;
-  font-weight: normal;
 }
 
 .pageMargins{

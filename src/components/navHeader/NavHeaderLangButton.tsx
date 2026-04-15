@@ -1,6 +1,7 @@
 import ButtonBase, { type ButtonBaseProps } from '$comps/ButtonBase';
 import { useTranslation } from 'react-i18next';
 import './NavHeaderLangButton.css';
+import '$src/TextSizing.css'
 
 type NavHeaderLangButtonProps = {
     langCode: string
@@ -12,7 +13,7 @@ function NavHeaderLangButton({langCode, ...rest} : NavHeaderLangButtonProps){
     const { i18n } = useTranslation();
     
     return(
-        <ButtonBase {...rest} className = "navHeaderLangButton" onClick={ () => i18n.changeLanguage(langCode)}/>
+        <ButtonBase {...rest} className = "textSmall navHeaderLangButton" onClick={ () => i18n.changeLanguage(langCode)}/>
     )
 }
 

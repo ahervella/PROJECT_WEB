@@ -3,6 +3,7 @@ import './NavHeader.css';
 import HeaderButton from './NavHeaderButton.tsx'
 import HeaderLangButton from './NavHeaderLangButton.tsx'
 import {ROUTES} from '$src/routes.ts'
+import '$src/TextSizing.css';
 
 function NavHeader() {
     const highlightRef = useRef<HTMLDivElement | null>(null)
@@ -10,14 +11,15 @@ function NavHeader() {
     return (
         <header>
             <div className="topTitle">
-                <h1>Alejandro Hervella</h1>
+                <title>Alejandro Hervella | Portfolio</title>
+                <h1 className={'textSiteTitle'}>Alejandro Hervella</h1>
                 
                 <span>
-                    <h3>
+                    <nav>
                         <HeaderLangButton langCode="en">eng</HeaderLangButton>
                         {"  |  "}
                         <HeaderLangButton langCode="es">esp</HeaderLangButton>
-                    </h3>
+                    </nav>
                 </span>
             </div>
             <div className="navBar">

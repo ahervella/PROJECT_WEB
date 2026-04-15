@@ -39,6 +39,7 @@ The project uses **i18next** with the HTTP backend plugin to support English (en
   - `$src/*` → src directory
   - `$assets/*` → src/assets
   - `$comps/*` → src/components
+- **Import rule**: Never use `../` to traverse up a directory. Same-folder imports (`./foo`) are fine. For anything outside the current folder, use the most appropriate alias (`$comps`, `$src`, `$assets`, `~`).
 - **ESLint** uses `eslint-import-resolver-alias` and `-typescript` to properly resolve imports through path aliases. Run `eslint . --fix` to auto-fix issues
 - **TypeScript** with strict mode enabled, targeting modern browsers
 - **Hot Module Reload (HMR)**: Component changes auto-reload, but route definitions and translation file changes may require a browser refresh

@@ -2,7 +2,7 @@ import './Games.css'
 import GamesEntryButton from './GamesEntryButton.tsx'
 import {ROUTES} from '$src/routes.ts'
 import { PageVariants } from '$src/constants.ts';
-
+import {TText} from "$comps/TText.tsx";
 import { motion } from "framer-motion";
 import { Routes } from 'react-router-dom';
 
@@ -12,8 +12,8 @@ function Games(){
         <motion.div variants={PageVariants} initial="initial" animate="enter">
             <div className="gamesGroup">
                 <div className="gamesHalfGroup">
-                    <div className="gamesHalfGroupTitle">
-                        <p>Professional Projects</p>
+                    <div className="textNorm gamesHalfGroupTitle">
+                        <p><TText locKey="GAMES_PRO_PROJS"/></p>
                     </div>
 
                     <GamesEntryButton
@@ -39,8 +39,8 @@ function Games(){
                 </div>
 
                 <div className="gamesHalfGroup">
-                    <div className="gamesHalfGroupTitle">
-                        <p>Personal Projects</p>
+                    <div className="textNorm gamesHalfGroupTitle">
+                        <p><TText locKey="GAMES_PERSONAL_PROJS"/></p>
                     </div>
                     
                     <GamesEntryButton

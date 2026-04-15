@@ -1,9 +1,107 @@
+ButtonBase
+	- establish basic mouse functionality and centering properties
+	- does so with exposing basic button props up the chain
+
+useHighlight/IHighlightable (highlight obj reference) 				 (maybe rename to text highlight)
+	- adds functionality for passing in a highlight ref to align with text
+
+HighlightBar
+	- has css of bar
+
+useNavigation/INavigable (urlPath, isExternal)
+	- adds functionality 
+
+make new css for textSizing
+	- smallText?
+	- normalText
+	- headerText
+	- titleText
+
+NavHeaderButton
+	- part of a group (so need to define parent container with highlight)
+	- needs text inside
+	- normal button text
+	- will have:
+		- button base
+		- INav, IHighlight
+		- 
+
+NavHeader(Container)
+	- will have:
+		- highlight bar
+		- nav header buttons
+		- nav tags
+
+NavHeaderLangButton
+	- part of a group (so need to define parent container with highlight)
+	- has divider between buttons
+	- smaller text
+
+
+SingleStandardButton (for back button)
+	- needs to define it’s own container with a button inside
+	- needs text inside button
+	- normal button text
+
+	- will have:
+		- highlight bar
+		- single button base
+		- INav, IHighlight
+		- 
+
+
+<title>Alejandro Hervella</title>
+<nav>about, games, etc  (no h1, h2, h3)
+<h1> about me</h1>
+
 
 
 TODO NEXT:
 - for claude code and adding a back button at each info page (wip)
 
-I would like to add a back button feature that can be reused across the different pages I plan to implement. The back button will appear just under the nav bar, and will be justified to the right. I would like it to be it's own component that lives in the pages component folder (within its own folder to house the tsx and css file).       
+I want to do a bit of refactoring with my button component structure.
+
+Currently I have this hierarchy of buttons:
+- Base Button component
+    - has expandable parameters for button basics: href, button events, basic CSS than can be expanded upon
+- Nav Button component extends Base Button component:
+    - adds concept that button is being used for navigating to somewhere (external site or internal page) and whether it's external or not to properly config on the Inside
+
+- Header Nav Button component extends Nav Button component:
+    - adds the use of naming the button with a lockey and adds animation
+
+
+I want to refactor this setup so that instead we have:
+
+- Base Button component stays exactly the same
+
+- Anim Label Button component
+    - extends the Base Button component
+    - applies the mouse hover highlighting part and parameters from the old Nav Header Button component without the isActive selection logic portion (that goes later)
+
+- Nav Button component
+    - extends the Anim Label Button component
+    - adds the parts from the old nav button that allows us to provide the urlPath and isExternalLink parameters
+
+- Nav Selection Button component
+    - now here take the logic that was allowing us to add the selecting portion from the old NavHeaderButton (the isActive logic)
+
+In doing all of this, make sure you accomadte for new names, pair up new css files with the new components and their respective css clauses (which are already definied in the old css respective files) that are needed for the logic described in each new component
+
+
+
+
+- make AnimButton,  then AnimNavButton
+
+
+
+I would like to add a back button feature that can be reused across the different pages I plan to implement. The back button will appear just under the nav bar, and will be justified to the right.
+
+I would like it to be it's own component that lives in the pages component folder (within its own folder to house the tsx and css file).
+
+I want the button's component to be based classed from the NavHeaderButton class since I want it to have the same highlighting style and animation, and text in the middle. The changes the expanded features the new class will have are: no selection view since this is just a 
+
+I want the button to be a square with a border that is the same thickness as the left and right middle lines in the nav bar. Inside the button it should say "back", and when you hover over it, the same animation and style as the nav bar button highlights appears when highlighted over it. Since these are both the same functionality, I would like to base class this further
 
 
 

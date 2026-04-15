@@ -3,6 +3,7 @@ import './GamesEntryButton.css'
 import type {NavButtonProps} from '$comps/NavButton.tsx'
 import NavButton from '$comps/NavButton.tsx'
 import TText from '$comps/TText.tsx'
+import "$src/TextSizing.css";
 
 type GamesEntryProps = {
     yearStart: number;
@@ -18,8 +19,8 @@ function GamesEntry( {yearStart, yearEnd, gameLocKey, ...rest} : GamesEntryProps
             {...rest}
             className = "gamesEntryGroup"
             >
-                <div className="EntryGroupTitle">{yearStart} - {yearEndStr}</div>
-                <div className="gamesEntryGroupBox"><TText locKey={gameLocKey}/></div>
+                <div className="textNorm EntryGroupTitle">{yearStart} - {yearEndStr}</div>
+                <div className="textNorm gamesEntryGroupBox"><TText locKey={gameLocKey}/></div>
         </NavButton>
     )
 }

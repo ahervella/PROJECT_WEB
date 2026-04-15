@@ -1,0 +1,19 @@
+.textSiteTitle{
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.textHeader{
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.textNorm{
+  font-size: 1.75rem;
+  font-weight: normal;
+}
+
+.textSmall{
+  font-size: 1.25rem;
+  font-weight: normal;
+}

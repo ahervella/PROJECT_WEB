@@ -11,7 +11,7 @@ export function getText( locKey: string ){
     return t(locKey);
 }
 
-function TText( {locKey, className} : TTextProps ){
+export function TText( {locKey, className} : TTextProps ){
     return(
         <span className={`translationText ${className || ""} `}>{getText(locKey)}</span>
     )

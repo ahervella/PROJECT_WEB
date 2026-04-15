@@ -13,7 +13,7 @@
   background: white;
 }
 
-h2.navBarButtonText{
+.navBarButtonText{
   display: flex;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
   height: 1.25rem;

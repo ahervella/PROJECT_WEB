@@ -2,6 +2,7 @@ import './NavHeaderButton.css';
 import type { NavButtonProps } from '$comps/NavButton.tsx';
 import NavButton from '$comps/NavButton.tsx';
 import TText from '$comps/TText.tsx';
+import '$src/TextSizing.css';
 import {useEffect} from "react"
 import {ROUTES} from '$src/routes.ts'
 
@@ -61,9 +62,7 @@ function NavHeaderButton( { highlightRef, titleLocKey, urlPath, ...rest}: NavHea
             urlPath={urlPath}
             className = {`navBarButton ${ isActive ? "active" : ""}`}
             >
-                <h2 className = {`navBarButtonText ${ isActive ? "active" : ""}`}>
-                    <TText locKey={titleLocKey} />
-                </h2>
+                <TText locKey={titleLocKey} className = {`textHeader navBarButtonText ${ isActive ? "active" : ""}`}/>
         </NavButton>
     )
 }
