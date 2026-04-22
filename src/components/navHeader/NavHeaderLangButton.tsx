@@ -1,4 +1,4 @@
-import ButtonBase, { type ButtonBaseProps } from '$comps/ButtonBase';
+import { ButtonBase, type ButtonBaseProps } from '$comps/buttons/ButtonBase';
 import { useTranslation } from 'react-i18next';
 import './NavHeaderLangButton.css';
 import '$src/TextSizing.css'
