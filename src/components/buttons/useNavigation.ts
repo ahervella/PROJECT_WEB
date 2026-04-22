@@ -1,4 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import {ROUTES} from '$src/routes.ts'
+import { useLocation } from "react-router-dom";
+import {useEffect} from "react"
 
 export interface INavigable {
     isExternalLink: boolean;
@@ -13,5 +16,13 @@ export function useNavigation( { isExternalLink, urlPath } : INavigable ){
     const href = isExternalLink ? urlPath : undefined;
     const target = isExternalLink ? "_blank" : "_self";
 
-    return { onClick, href, target };
+
+    const currLocation = useLocation();
+    useEffect( ()=> {console.log (currLocation)}, [currLocation]);
+
+    const isActive = urlPath == ROUTES.ABOUT ?
+        currLocation.pathname == urlPath :
+        currLocation.pathname.startsWith(urlPath);
+
+    return { onClick, href, target, isActive };
 }

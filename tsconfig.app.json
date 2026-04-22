@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    //"baseUrl": ".",
+    "paths": {
+      "~/*" : ["./*"],
+      "$src/*" : ["./src/*"],
+      "$assets/*": ["./src/assets/*"],
+      "$comps/*": ["./src/components/*"]
+    },
     "target": "ES2023",
     "useDefineForClassFields": true,
     "lib": ["ES2023", "DOM", "DOM.Iterable"],

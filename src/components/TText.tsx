@@ -4,6 +4,7 @@ import './TText.css'
 type TTextProps = {
     locKey: string;
     className?: string;
+    ref?: React.RefObject<HTMLSpanElement | null>;
 }
 
 export function getText( locKey: string ){
@@ -11,9 +12,9 @@ export function getText( locKey: string ){
     return t(locKey);
 }
 
-export function TText( {locKey, className} : TTextProps ){
+export function TText( {locKey, className, ref} : TTextProps ){
     return(
-        <span className={`translationText ${className || ""} `}>{getText(locKey)}</span>
+        <span ref={ref} className={`translationText ${className || ""} `}>{getText(locKey)}</span>
     )
 }
 

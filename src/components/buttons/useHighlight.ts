@@ -1,28 +1,38 @@
-export interface IHighlightable {
+export type HighlightRefProp = {
     highlightRef: React.RefObject<HTMLDivElement | null>;
 }
 
-export function useHighlight( {highlightRef} : IHighlightable ){
+export type ButtonTextRefProp = {
+    buttonTextRef: React.RefObject<HTMLSpanElement | null>;
+}
+
+export interface IHighlightable extends HighlightRefProp, ButtonTextRefProp {}
+
+export function useHighlight( {highlightRef, buttonTextRef} : IHighlightable ){
 
     function onMouseEnter( event: React.MouseEvent<HTMLAnchorElement> ){
-        if( highlightRef?.current == null ){return;}
+        if( highlightRef?.current == null || buttonTextRef?.current == null ){return;}
 
-        const btn = event.currentTarget;
-        const buttonRect = btn.getBoundingClientRect();
+        console.log( "hello world")
 
-        const buttonText = btn.querySelector(".groupTextButtonText");
-        if (buttonText == null) { return; }
-        const buttonTextRect = buttonText.getBoundingClientRect();
+        const buttonTextRect = buttonTextRef.current.getBoundingClientRect();
 
-        highlightRef.current.style.width = `${buttonRect.width}px`;
+        highlightRef.current.style.width = `${buttonTextRect.width}px`;
 
-        const h = buttonRect.height - ((buttonRect.height - buttonTextRect.height) / 2 + buttonTextRect.height);
-        highlightRef.current.style.height = `${h}px`;
+        const currHeight = highlightRef.current.clientHeight;
+        const reposition = currHeight > 0;
+
+        highlightRef.current.classList.toggle('reposition', reposition);
+
+        highlightRef.current.classList.toggle( 'showHeight', true );
+
+
+        console.log( "current height:" + highlightRef.current.style.height);
 
         highlightRef.current.style.transform = `
             translate(
-                ${btn.offsetLeft}px,
-                ${btn.offsetHeight - h}px
+                ${buttonTextRect.left}px,
+                ${buttonTextRect.bottom}px
             )
         `;
     }
@@ -31,8 +41,9 @@ export function useHighlight( {highlightRef} : IHighlightable ){
 
         if( highlightRef?.current == null ){return;}
 
-        highlightRef.current.style.height = "0";
+        highlightRef.current.classList.toggle( 'showHeight', false );
     }
 
     return { onMouseEnter, onMouseLeave };
 }
+

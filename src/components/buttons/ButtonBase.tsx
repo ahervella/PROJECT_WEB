@@ -8,17 +8,14 @@ export type ButtonBaseProps = {
     target?: string;
     href?: string;
     className?: string;
+    ref?: React.Ref<HTMLAnchorElement | null>;
 }
 
-export function ButtonBase( {children, onMouseEnter, onMouseLeave, onClick, target, href, className } : ButtonBaseProps ){
+export function ButtonBase( { children, className, ...rest } : ButtonBaseProps ){
 
     return(
         <a
-            onMouseEnter = {onMouseEnter ? onMouseEnter : undefined}
-            onMouseLeave = {onMouseLeave ? onMouseLeave : undefined}
-            onClick = { onClick? onClick : undefined } 
-            target = { target? target : undefined }
-            href = { href? href : undefined }
+            {...rest}
             className = {`buttonBase ${className || ""} `}
             >
                 {children}

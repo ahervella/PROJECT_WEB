@@ -1,3 +1,24 @@
 .navHeaderLangButton{  
-    display: inline;
+    display: inline-flex;
+    align-items:center; /*vertical anchor centered*/
+    border: var(--debugBorderSize) solid var(--debugBorderClr);
+    height: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navHeaderLangButtonBackground{
+    display: inline-flex;
+    align-items:center; /*vertical anchor centered*/
+    padding-left: 5px;
+    padding-right: 5px;
+    border: var(--debugBorderSize) solid var(--debugBorderClr);
+    height: 20px;
+    transition: 550ms;
+}
+
+
+.navHeaderLangButtonBackground.active {
+  background: white;
+  color: black;
 }
