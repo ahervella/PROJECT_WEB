@@ -5,8 +5,8 @@ import { ROUTES } from './routes.ts';
 
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import Games from "$comps/pages/games/Games";
-import GamesEOE from "$comps/pages/games/eoe/GamesEOE"
+import { Games } from "$comps/pages/games/Games";
+import { GamesEOE } from "$comps/pages/games/eoe/GamesEOE"
 
 import { AnimatePresence } from 'framer-motion';
 //import Art from "./pages/Art";

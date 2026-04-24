@@ -16,11 +16,13 @@
 }
 
 .aboutGroupPhoto{
-  min-width: 300px;
-  max-width: 300px;
-  min-height: 300px;
-  max-height: 300px;
-  background: white;
+  width: 300px;
+  height: min-content;
+  /*min-width: 300px;*/
+  /*max-width: 300px;*/
+  /*min-height: 300px;*/
+  /*max-height: 300px;*/
+  background: blue;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
 }
 

@@ -1,53 +1,40 @@
-ButtonBase
-	- establish basic mouse functionality and centering properties
-	- does so with exposing basic button props up the chain
 
-useHighlight/IHighlightable (highlight obj reference) 				 (maybe rename to text highlight)
-	- adds functionality for passing in a highlight ref to align with text
+todo:
+- make constant in css for animate time for active fade
 
-HighlightBar
-	- has css of bar
+- info page section (horizontal group plus:)
+    - has the bottom margin 
 
-useNavigation/INavigable (urlPath, isExternal)
-	- adds functionality 
+- info page section group
+    - fixed gap (which they all share and is variable)
+    - border debugging
 
-make new css for textSizing
-	- smallText?
-	- normalText
-	- headerText
-	- titleText
+- horizontal group
+    - horizontal flex
+    - flex centered
 
-NavHeaderButton
-	- part of a group (so need to define parent container with highlight)
-	- needs text inside
-	- normal button text
-	- will have:
-		- button base
-		- INav, IHighlight
-		- 
+- vertical group
+    - vert flex
+    - flex start
 
-NavHeader(Container)
-	- will have:
-		- highlight bar
-		- nav header buttons
-		- nav tags
+- grid group
+    - defined width and height (ignores element width)
+    - items centered when last row does not meet col count
 
-NavHeaderLangButton
-	- part of a group (so need to define parent container with highlight)
-	- has divider between buttons
-	- smaller text
+- info page element:
+    - width (value, percent, or empty for 100%)
 
+- info page img
+    - can have default img width
+    - takes in an ordered ref list that adds the image props it is showing, and for being able to show fullscreen view
+    - fullscreen view for images and grid gallery
+        - load a page overlay
+        - arrows for going from one image to next (only if more than one)
 
-SingleStandardButton (for back button)
-	- needs to define it’s own container with a button inside
-	- needs text inside button
-	- normal button text
+- info page text
+    - default aligned left like normal
 
-	- will have:
-		- highlight bar
-		- single button base
-		- INav, IHighlight
-		- 
+- info page video
 
 
 <title>Alejandro Hervella</title>

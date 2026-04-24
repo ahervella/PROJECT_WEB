@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"; 
 import './TText.css'
 
-type TTextProps = {
+export type TTextProps = {
     locKey: string;
     className?: string;
     ref?: React.RefObject<HTMLSpanElement | null>;
@@ -17,5 +17,3 @@ export function TText( {locKey, className, ref} : TTextProps ){
         <span ref={ref} className={`translationText ${className || ""} `}>{getText(locKey)}</span>
     )
 }
-
-export default TText;

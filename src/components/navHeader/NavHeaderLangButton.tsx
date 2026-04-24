@@ -11,11 +11,11 @@ type NavHeaderLangButtonProps = {
 } & ButtonBaseProps & HighlightRefProp
 
 
-function NavHeaderLangButton({langCode, buttonText, ...rest} : NavHeaderLangButtonProps){
+function NavHeaderLangButton({langCode, buttonText, highlightRef, ...rest} : NavHeaderLangButtonProps){
 
     const buttonTextRef = createButtonTextRef();
 
-    const highlight = useHighlight({...rest, buttonTextRef});
+    const highlight = useHighlight({highlightRef, buttonTextRef});
 
     const { i18n } = useTranslation();
     const isActive = i18n.language == langCode;

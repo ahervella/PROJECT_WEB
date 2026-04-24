@@ -1,23 +1,24 @@
+import { PageBase } from '$comps/pages/PageBase.tsx';
+
 import './About.css'
 import profileImg from '$assets/profile.jpg'
-import TText from '$comps/TText';
 import "$src/TextSizing.css";
-import { motion } from "framer-motion";
 
-import { PageVariants } from '../../../constants.ts';
+import {InfoPageSection} from "$comps/pages/InfoPageSection";
+import {InfoPageImg} from "$comps/pages/InfoPageImg.tsx"
+import {InfoPageText} from "$comps/pages/InfoPageText.tsx"
 
 function About(){
 
     return(          
-        
-        <motion.div variants={PageVariants} initial="initial" animate="enter" >
-            <div className="aboutGroup">
-                    <div className="aboutGroupPhotoTextGroup">
-                        <img src={profileImg} alt="Alejandro Hervella" className="aboutGroupPhoto" />
-                        <p className="textNorm aboutGroupText"><TText locKey="ABOUT_BODY"/></p>
-                    </div>
-            </div>
-        </motion.div>
+        <PageBase>
+
+            <InfoPageSection>
+                <InfoPageImg imgPath={profileImg} titleLocKey="Alejandro Hervella" />
+                <InfoPageText locKey="ABOUT_BODY" />
+            </InfoPageSection>
+            
+        </PageBase>
     
     )
 }

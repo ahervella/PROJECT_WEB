@@ -4,9 +4,8 @@ import {ROUTES} from '$src/routes.ts'
 import { PageVariants } from '$src/constants.ts';
 import {TText} from "$comps/TText.tsx";
 import { motion } from "framer-motion";
-import { Routes } from 'react-router-dom';
 
-function Games(){
+export function Games(){
 
     return(
         <motion.div variants={PageVariants} initial="initial" animate="enter">
@@ -80,5 +79,3 @@ function Games(){
         </motion.div>
     )
 }
-
-export default Games;

@@ -3,7 +3,7 @@ import './GamesEntryButton.css'
 import {ButtonBase, type ButtonBaseProps} from '$comps/buttons/ButtonBase.tsx'
 import { HighlightBar, createHighlightRef, createButtonTextRef } from '$comps/buttons/HighlightBar';
 import { useHighlight } from '$comps/buttons/useHighlight';
-import TText from '$comps/TText.tsx'
+import {TText} from '$comps/TText.tsx'
 import "$src/TextSizing.css";
 import { useNavigation, type INavigable } from '$comps/buttons/useNavigation';
 
