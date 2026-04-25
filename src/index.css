@@ -9,6 +9,11 @@
   font-family: VT323;
 }
 
+@font-face {
+  src: url(assets/IBMPlexMono-Regular.ttf);
+  font-family: IBMPlexMono;
+}
+
 body{
   font-family: VT323, Arial, Helvetica, sans-serif;
   color: var(--fontClr);
@@ -17,8 +22,8 @@ body{
 }
 
 main{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
 }
 

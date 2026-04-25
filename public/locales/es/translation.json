@@ -1,22 +1,27 @@
 {
-    "ABOUT": "información",
-    "LINKEDIN": "linkedIn",
-    "GITHUB": "gitHub",
-
-    "GAMES": "videojuegos",
-    "GAMES_PRO_PROJS": "Proyectos Profesionales",
-    "GAMES_PERSONAL_PROJS": "Proyectos Personales",
-    "GAMES_EOE_TITLE1": "Echoes of Elysium - Imagen 1",
-    "GAMES_EOE_TITLE2": "Echoes of Elysium - Imagen 2",
-    "GAMES_EOE_BODY1": "Echoes of Elysium es uno de los juegos de la historia!",
-    "GAMES_EOE_BODY2": "Echoes of Elysium es uno de los juegos de la historia!",
-
-    "ART": "arte",
-    "MUSIC": "música",
-    
-    "ABOUT_BODY": "¡Hola!\n\nSoy Alejandro, vengo en paz, y soy ingeniero y desarrollador de juegos (y aveces artista). Amo el mundo de las computadoras, el arte, la tecnología retro, la gente y por supuesto, los videojuegos.\n\nPor favor no dudes en ponerte en contacto para cualquier cosa.\n\n¡Nos vemos en el salón de juegos!\n\nahervella@me.com",
-
-    "PRESENT": "presente",
-    "PICO_PROJ": "Proyecto con Pico-8",
-    "WEB_PROJ": "Proyecto de Web"
+  "ABOUT": "información",
+  "LINKEDIN": "linkedIn",
+  "GITHUB": "gitHub",
+  "BUTTON_BACK": "atrás",
+  "GAMES": "videojuegos",
+  "GAMES_PRO_PROJS": "Proyectos Profesionales",
+  "GAMES_PERSONAL_PROJS": "Proyectos Personales",
+  "GAMES_EOE_BODY1": "Echoes of Elysium fue el último juego profesional en el que trabajé con Loric Games durante 3 años, desde enero de 2023 hasta febrero de 2026. Echoes of Elysium es un juego multijugador sandbox de supervivencia y creación que te lleva a los cielos en busca de respuestas del pasado. \nA lo largo del viaje, el jugador construye su base en su aeronave mientras lucha contra bestias mecánicas míticas.",
+  "GAMES_EOE_BODY2": "El juego es multijugador con hasta 10 jugadores a la vez. \nLos jugadores pueden organizar sus propios juegos locales o jugar juntos a través de servidores dedicados. \nTrabajar juntos es esencial para el éxito y los grandes barcos.",
+  "ART": "arte",
+  "MUSIC": "música",
+  "ABOUT_BODY": "¡Hola!\n\nSoy Alejandro, vengo en paz, y soy ingeniero y desarrollador de juegos (y aveces artista). Amo el mundo de las computadoras, el arte, la tecnología retro, la gente y por supuesto, los videojuegos.\n\nPor favor no dudes en ponerte en contacto para cualquier cosa.\n\n¡Nos vemos en el salón de juegos!\n\nahervella@me.com",
+  "PRESENT": "presente",
+  "PICO_PROJ": "Proyecto con Pico-8",
+  "WEB_PROJ": "Proyecto de Web",
+  "URL_WEBSITE": "sitio",
+  "URL_STEAM": "página Steam",
+  "URL_GITHUB": "repo github",
+  "GAMES_EOE_IMG_COVER_ART": "Echoes of Elysium - Portada",
+  "GAMES_EOE_IMG_SCREENSHOT": "Echoes of Elysium - Captura de Pantalla",
+  "GAMES_EOE_TITLE": "Echoes of Elysium",
+  "URL_LORIC": "Loric Games",
+  "GAMES_EOE_TITLE_CON": "Contribuciones",
+  "GAMES_EOE_BODY_CON": "Tuve la posición de Ingeniero de Software en Loric Games:\n\n\n• Desarrollé en C++ (servidor) y C# (Unity) para Echoes of Elysium, el juego de supervivencia y creación en tercera persona recientemente lanzado en Steam\n• Diseñé e implementé los sistemas de ajustes, inventario, y construcción con el servidor y cliente en C++ y C#\n• Refactoricé el UI usando patrones de MVC para mejorar el mantenimiento del código junto con los equipos de arte y diseño\n• Amplié herramientas para implementar UI, VFX, sistemas de compilación, datos estáticos, localización y audio\n• Dirigí a un equipo de cuatro ingenieros en prácticas en el uso de la infraestructura completa del proyecto (C++, C#, Unity)\n• Diagnostiqué y solucioné 200+ errores sobre fallos, código asíncrono, conexiones de red, rendimiento, UI y lógica de jugabilidad\n• Programé sistemas de audio utilizando Wwise para implementar sonidos ambientales, música y parámetros flexibles",
+  "GAMES_EOE_TITLE_TRAILER": "Echoes of Elysium - Tráiler de lanzamiento"
 }

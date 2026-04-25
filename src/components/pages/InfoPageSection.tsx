@@ -14,7 +14,7 @@ export function InfoPageSection( {children, className, subtitleLocKey, isVertica
 
     const finalClassName = `infoPageSection
     ${className || ""}
-    ${isVertical ? "vecrtical" : "horizontal"}
+    ${isVertical ? "vertical" : "horizontal"}
     ${isNested ? "" : "bottomDividerMargin"}`;
 
     if( subtitleLocKey )

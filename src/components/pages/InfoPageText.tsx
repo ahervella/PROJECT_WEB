@@ -6,6 +6,6 @@ export type InfoPageTextProps = TTextProps;
 
 export function InfoPageText( {...rest} : InfoPageTextProps){
     return(
-        <TText {...rest}className="textNorm infoPageText" />
+        <TText {...rest}className="textNorm IBM infoPageText" />
     )
 }

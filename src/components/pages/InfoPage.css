@@ -13,6 +13,20 @@
   margin-bottom: 80px;
 }
 
+.infoPageSection.vertical{
+  flex-direction: column;
+}
+
+.infoPageSection.linkTextWrapper{
+  justify-content: start;
+}
+
+.linkTextButtons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .infoPageSection.grid{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -33,4 +47,22 @@
   width: 100%;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
   margin: 0;
+}
+
+.infoPageVideo{
+  min-width: 560px;
+  min-height: 315px;
+  cursor: pointer;
+}
+
+.infoPageBackButtonDiv{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 0px;
+}
+
+.buttonBase.standaloneButton.infoPageBackButton{
+  width: 50px;
+  height: 30px;
 }

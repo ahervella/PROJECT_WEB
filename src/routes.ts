@@ -5,6 +5,10 @@ export const ROUTES = {
 
     GAMES: "/games/",
     GAMES_EOE: "eoe",
+    GAMES_EOE_VIDEO_TRAILER: "https://www.youtube.com/embed/HUmo7tddaV0?si=0shOd826HQl6IxH4",
+    GAMES_EOE_SITE: "https://www.echoes.games/",
+    GAMES_EOE_STEAM: "https://store.steampowered.com/app/2644050/Echoes_of_Elysium/",
+    GAMES_EOE_LORIC: "https://www.loricgames.com/",
     GAMES_GOTC: "/gotc",
     GAMES_WEB: "/proj-web",
     GAMES_PICO8: "/proj-pico8",
