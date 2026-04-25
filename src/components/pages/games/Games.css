@@ -21,9 +21,6 @@
   border: var(--debugBorderSize) solid var(--debugBorderClr);
 }
 
-
-
-
 .lineVertical{
   width: 2px;
   border: none;

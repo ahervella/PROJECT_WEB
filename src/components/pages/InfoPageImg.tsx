@@ -5,13 +5,13 @@ import { ImgBrowserContext } from "~/src/components/pages/imgBrowser/ImgBrowserC
 
 export type InfoPageImgProps = {
     imgPath: string;
-    titleLocKey: string;
+    imgLocKey: string;
     width?: number | string;
     height?: number | string;
 }
 
-export function InfoPageImg( {imgPath, titleLocKey, width, height}: InfoPageImgProps ){
-    const titleName = getText( titleLocKey);
+export function InfoPageImg( {imgPath, imgLocKey, width, height}: InfoPageImgProps ){
+    const titleName = getText( imgLocKey);
 
     let finalWidth = width || "min-content";
     if( width == undefined && height == undefined ){
@@ -21,10 +21,12 @@ export function InfoPageImg( {imgPath, titleLocKey, width, height}: InfoPageImgP
     const finalHeight = height || "min-content";
 
     const imgBrowserContext = useContext(ImgBrowserContext);
-    const browserIndexRef = useRef<number|null>(null);
+    const browserIndexRef = useRef<number|undefined>(undefined);
 
     useEffect(() => {
-      browserIndexRef.current = imgBrowserContext?.registerImg(imgPath);
+        if( browserIndexRef != undefined){
+            browserIndexRef.current = imgBrowserContext?.registerImg({imgPath, imgLocKey});
+        }
     }, []);
 
     function onClick(){

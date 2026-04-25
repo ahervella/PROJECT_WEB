@@ -1,20 +1,20 @@
-import { useMemo, useRef, useState, type RefObject } from "react";
-import { ImgBrowserContext } from "./ImgBrowserContext";
+import { useMemo, useRef, useState } from "react";
+import { ImgBrowserContext, type ImgContainer } from "./ImgBrowserContext";
 
 export type ImgBrowserProviderProps = {
     children?: React.ReactNode;
 } 
 
 export function ImgBrowserProvider( {children} : ImgBrowserProviderProps ){
-    const [imgs, setImg] = useState<string[]>([]);
+    const [imgs, setImg] = useState<ImgContainer[]>([]);
     const [activeIndex, setIndex] = useState<number|null>(null);
     
     const imgCountRef = useRef(0);
 
-    function registerImg( imgPath: string ) : number {
+    function registerImg( img: ImgContainer ) : number {
         const index = imgCountRef.current;
         imgCountRef.current += 1;
-        setImg( prevImgs => [...prevImgs, imgPath]);
+        setImg( prevImgs => [...prevImgs, img]);
         
         return index;
     }

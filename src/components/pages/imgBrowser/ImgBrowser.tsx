@@ -57,9 +57,12 @@ export function ImgBrowser(){
 
 
     let currImgPath = "";
+    let currImgLocKey = "";
 
     if( imgBrowserContext != null && imgBrowserContext?.activeIndex !== null ){
-        currImgPath = imgBrowserContext.imgs[imgBrowserContext.activeIndex];
+        const currImg = imgBrowserContext.imgs[imgBrowserContext.activeIndex];
+        currImgPath = currImg.imgPath;
+        currImgLocKey = currImg.imgLocKey;
     }
 
     return(
@@ -73,7 +76,7 @@ export function ImgBrowser(){
 
                         <div className="imgTextGroup">
                             <img className="img" src={currImgPath} alt="" />
-                            <TText className="textNorm" locKey="GAMES_EOE_TITLE"/>
+                            <TText className="textNorm" locKey={currImgLocKey}/>
                         </div>
 
                         <StandaloneButton className="imgBrowserButton" locKey=">>" onClick={onRightButtonClick}/>
