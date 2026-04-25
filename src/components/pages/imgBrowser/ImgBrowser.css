@@ -1,0 +1,55 @@
+.imgBrowser{
+    border: var(--debugBorderSize) solid var(--debugBorderClr);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    opacity: 1.0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.marginedContent{
+    border: var(--debugBorderSize) solid var(--debugBorderClr);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 75px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 75px;
+}
+
+.imgTextGroup{
+    border: var(--debugBorderSize) solid var(--debugBorderClr);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.buttonBase.standaloneButton.imgBrowserButton{
+    width: 75px;
+    height: 125px;
+    padding: 0px;
+}
+
+.buttonBase.standaloneButton.imgBrowserButton.closeButton{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+}

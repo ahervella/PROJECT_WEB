@@ -1,5 +1,7 @@
 import "./InfoPage.css"
 import { getText } from "$comps/TText"
+import { useContext, useEffect, useRef } from "react";
+import { ImgBrowserContext } from "~/src/components/pages/imgBrowser/ImgBrowserContext";
 
 export type InfoPageImgProps = {
     imgPath: string;
@@ -18,7 +20,22 @@ export function InfoPageImg( {imgPath, titleLocKey, width, height}: InfoPageImgP
 
     const finalHeight = height || "min-content";
 
+    const imgBrowserContext = useContext(ImgBrowserContext);
+    const browserIndexRef = useRef<number|null>(null);
+
+    useEffect(() => {
+      browserIndexRef.current = imgBrowserContext?.registerImg(imgPath);
+    }, []);
+
+    function onClick(){
+        if( imgBrowserContext == null
+            || browserIndexRef?.current == null
+        ){return;}
+
+        imgBrowserContext.openBrowser(browserIndexRef.current);
+    }
+
     return(
-        <img className="infoPageImg" src={imgPath} alt={titleName} style={{ height: finalHeight, width: finalWidth }} />
+        <img onClick={onClick} className="infoPageImg" src={imgPath} alt={titleName} style={{ height: finalHeight, width: finalWidth }} />
     )
 }

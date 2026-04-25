@@ -1,6 +1,6 @@
 import {ButtonBase, type ButtonBaseProps} from '$comps/buttons/ButtonBase.tsx'
 
-import { createButtonTextRef } from '$comps/buttons/HighlightBar';
+import { useCreateButtonTextRef } from '$comps/buttons/HighlightBar';
 import { type HighlightRefProp, useHighlight } from '$comps/buttons/useHighlight';
 import { useNavigation, type INavigable } from '$comps/buttons/useNavigation';
 
@@ -14,7 +14,7 @@ export type NavHeaderButtonProps = {
 
 export function NavHeaderButton( { highlightRef, titleLocKey, urlPath, isExternalLink, ...rest}: NavHeaderButtonProps ) {
 
-    const buttonTextRef = createButtonTextRef();
+    const buttonTextRef = useCreateButtonTextRef();
 
     const highlight = useHighlight({highlightRef, buttonTextRef});
     const { isActive, ...navigationProps } = useNavigation({urlPath, isExternalLink});

@@ -64,6 +64,11 @@ Game pages follow a pattern of a container page and game-specific subpage, allow
 - Global styles in `src/index.css` and `src/App.css`
 - Responsive design with page margins in the main App container
 
+## Collaboration Style
+
+- **Do not suggest getting started on code or imply the user should move to implementation.** The user thinks through problems thoroughly before writing code and will decide when they are ready. Nudging them toward implementation makes them feel rushed.
+- **Proactively read files instead of asking the user to share them.** If the user asks about something in their codebase and you need to see a file to answer, read it directly. Only ask if you don't have enough context to know where the file is.
+
 ## Key Patterns
 
 **Routes & Page Components**: All top-level pages are defined in `ROUTES` constant and rendered as Route elements. Nested routes (like game detail pages) use React Router's nested routing API.

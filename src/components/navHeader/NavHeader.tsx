@@ -1,15 +1,15 @@
 import './NavHeader.css';
 import {NavHeaderButton} from './NavHeaderButton.tsx'
 import HeaderLangButton from './NavHeaderLangButton.tsx'
-import { HighlightBar, createHighlightRef } from "$comps/buttons/HighlightBar.tsx";
+import { HighlightBar, useCreateHighlightRef } from "$comps/buttons/HighlightBar.tsx";
 import {ROUTES} from '$src/routes.ts'
 import '$src/TextSizing.css';
 
 function NavHeader() {
 
-    const highlightRef = createHighlightRef();
+    const highlightRef = useCreateHighlightRef();
 
-    const langHighlightRef = createHighlightRef();
+    const langHighlightRef = useCreateHighlightRef();
 
     return (
         <header>

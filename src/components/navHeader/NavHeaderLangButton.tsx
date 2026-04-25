@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './NavHeaderLangButton.css';
 import '$src/TextSizing.css'
 import { useHighlight, type HighlightRefProp } from '$comps/buttons/useHighlight';
-import { createButtonTextRef } from '$comps/buttons/HighlightBar';
+import { useCreateButtonTextRef } from '$comps/buttons/HighlightBar';
 
 type NavHeaderLangButtonProps = {
     langCode: string;
@@ -13,7 +13,7 @@ type NavHeaderLangButtonProps = {
 
 function NavHeaderLangButton({langCode, buttonText, highlightRef, ...rest} : NavHeaderLangButtonProps){
 
-    const buttonTextRef = createButtonTextRef();
+    const buttonTextRef = useCreateButtonTextRef();
 
     const highlight = useHighlight({highlightRef, buttonTextRef});
 

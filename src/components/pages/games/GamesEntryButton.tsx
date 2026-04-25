@@ -1,7 +1,7 @@
 import './GamesEntryButton.css'
 //TODO: get this stuff from the root so renaming and moving things is easier
 import {ButtonBase, type ButtonBaseProps} from '$comps/buttons/ButtonBase.tsx'
-import { HighlightBar, createHighlightRef, createButtonTextRef } from '$comps/buttons/HighlightBar';
+import { HighlightBar, useCreateHighlightRef, useCreateButtonTextRef } from '$comps/buttons/HighlightBar';
 import { useHighlight } from '$comps/buttons/useHighlight';
 import {TText} from '$comps/TText.tsx'
 import "$src/TextSizing.css";
@@ -15,8 +15,8 @@ type GamesEntryProps = {
 
 function GamesEntry( {yearStart, yearEnd, gameLocKey, ...rest} : GamesEntryProps){
     
-    const highlightRef = createHighlightRef();
-    const buttonTextRef = createButtonTextRef();
+    const highlightRef = useCreateHighlightRef();
+    const buttonTextRef = useCreateButtonTextRef();
 
     const highlight = useHighlight({highlightRef, buttonTextRef});
     const navigation = useNavigation({...rest});

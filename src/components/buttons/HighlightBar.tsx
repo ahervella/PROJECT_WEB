@@ -2,7 +2,7 @@ import "./HighlightBar.css";
 import {useRef} from "react";
 
 export type HighlightBarProps ={
-    ref?: React.Ref<HTMLDivElement>
+    ref: React.Ref<HTMLDivElement>
 }
 
 export function HighlightBar( {...rest} : HighlightBarProps){
@@ -11,6 +11,6 @@ export function HighlightBar( {...rest} : HighlightBarProps){
     )
 }
 
-export const createHighlightRef = () => useRef<HTMLDivElement | null>(null);
+export const useCreateHighlightRef = () => useRef<HTMLDivElement | null>(null);
 
-export const createButtonTextRef = () => useRef<HTMLSpanElement | null>(null);
+export const useCreateButtonTextRef = () => useRef<HTMLSpanElement | null>(null);

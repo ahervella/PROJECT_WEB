@@ -1,0 +1,9 @@
+.buttonBase.standaloneButton{
+    border: 2px solid var(--fontClr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--fontClr);
+    padding: 8px 20px;
+}

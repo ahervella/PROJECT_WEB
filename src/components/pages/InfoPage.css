@@ -15,6 +15,7 @@
 
 .infoPageImg{
   border: var(--debugBorderSize) solid var(--debugBorderClr);
+  cursor: pointer;
 }
 
 .infoPageText{
