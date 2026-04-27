@@ -2,7 +2,7 @@ import {ButtonBase, type ButtonBaseProps} from '$comps/buttons/ButtonBase.tsx'
 
 import { useCreateButtonTextRef } from '$comps/buttons/HighlightBar';
 import { type HighlightRefProp, useHighlight } from '$comps/buttons/useHighlight';
-import { useNavigation, type INavigable } from '$comps/buttons/useNavigation';
+import { useNavigationSelectActive, type INavigableSelectActive } from '$comps/buttons/useNavigation';
 
 import './NavHeaderButton.css';
 import {TText} from '$comps/TText.tsx';
@@ -10,19 +10,24 @@ import '$src/TextSizing.css';
 
 export type NavHeaderButtonProps = {
     titleLocKey: string;
-} & ButtonBaseProps & HighlightRefProp & INavigable
+    className?: string;
+} & ButtonBaseProps & HighlightRefProp & INavigableSelectActive
 
-export function NavHeaderButton( { highlightRef, titleLocKey, urlPath, isExternalLink, ...rest}: NavHeaderButtonProps ) {
+export function NavHeaderButton( { highlightRef, titleLocKey, urlPath, isExternalLink, matchURLExactly, className, ...rest}: NavHeaderButtonProps ) {
 
     const buttonTextRef = useCreateButtonTextRef();
 
     const highlight = useHighlight({highlightRef, buttonTextRef});
-    const { isActive, ...navigationProps } = useNavigation({urlPath, isExternalLink});
+    const { isActive, ...navigationProps } = useNavigationSelectActive({urlPath, isExternalLink, matchURLExactly});
+
+    const finalClassName = `navBarButton
+        ${className || ""}
+        ${isActive ? "active" : ""}`;
 
     return(
         <ButtonBase
             {...rest} {...highlight} {...navigationProps}
-            className = {`navBarButton ${ isActive ? "active" : ""}`}
+            className = {finalClassName}
             >
                 <TText ref={buttonTextRef} locKey={titleLocKey} className = {`textHeader navBarButtonText ${ isActive ? "active" : ""}`}/>
         </ButtonBase>

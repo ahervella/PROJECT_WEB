@@ -52,5 +52,11 @@
   "PROJ_AAA_SLIDES": "stream presentation",
   "PROJ_PICO8_SITE": "PICO-8 site",
   "GAMES_EOE_BODY_ANDREA": "This was a dev log that my friend and former co-worker, Andrea Carhuavilca, participated in and explained the design and concepts behind the game.",
-  "GAMES_EOE_TITLE_ANDREA": "Echoes of Elysium - Dev Log"
+  "GAMES_EOE_TITLE_ANDREA": "Echoes of Elysium - Dev Log",
+  "ART_ANIMATION": "animation",
+  "ART_DRAWINGS": "drawings",
+  "ART_DIGITAL": "digital",
+  "ART_ABOUT": "about art",
+  "ART_ABOUT_BODY": "I grew up drawing cartoons and animating stick figures, fascinated by animated movies and videogames. Split between the technical and artistic part, after graduating high school in 2016, I decided to study animation at the School of Visual Arts in New York City. After three semesters, I realized that I yearned to not only practice an art, but to also engage with more technical problems and thinking. My fourth college semester was a brand new start at Northeastern University where I decided to instead pursue being a Computer Engineer.\n\nYet while studying at Northeastern, I still found time to indulge in my love for art including working as a graphic designer at the university's radio station, WRBB 104.9 FM, drawing outside, or creating art for my personal projects.\n\nWith a desire for both creative and technical work, I quickly became enamored with the world of developing videogames, and pursued a career in game development and general software engineering.\n\nRegardless of where my career takes me, I've always enjoyed and forever will love creating art. I hope you enjoy my doodles!",
+  "ART_ABOUT_TITLE": "Once upon a time..."
 }

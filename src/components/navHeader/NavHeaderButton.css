@@ -1,7 +1,6 @@
 .navBarButton{
   height: 30px;
   margin-bottom: 4px;
-  max-width: 200px;
   transition: 550ms;
   z-index: 0;
   padding-left: 20px;
@@ -14,6 +13,7 @@
 
 .navBarButtonText{
   display: flex;
+  min-width:max-content;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
   /*height: 1.25rem;*/
   justify-content: center; /*horizontal anchor centered*/

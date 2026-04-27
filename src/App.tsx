@@ -15,7 +15,8 @@ import { GamesPICO8 } from "$comps/pages/games/pico8/GamesPICO8"
 
 import { AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
-//import Art from "./pages/Art";
+import { ArtAbout } from "$comps/pages/art/ArtAbout";
+import { ArtNavHeader } from '$comps/navHeader/ArtNavHeader.tsx';
 //import Music from "./pages/Music";
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
             <ScrollToTop />
             <header>
                 <NewHeader />
+                <AnimatePresence>
+                  <ArtNavHeader/>
+                </AnimatePresence>
             </header>
             <main>
               {/* Allowing us to use a unique key for key, which is generated at random. Since we are changing the tree, we also need to tell it what location we are in now since that can't be auto reconciled anymore. Changing the tree lets us control the tree destruction time line with AnimatePresence before we make the new tree*/}
@@ -46,6 +50,7 @@ function App() {
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_WEB} element={<GamesWEB />}/>
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_PICO8} element={<GamesPICO8 />}/>
 
+                  <Route path={ROUTES.ART} element={<ArtAbout />}/>
                   {/*
                   <Route path={ROUTES.GAMES_GOTC} element={<GamesPageGOTC />}/>
                   <Route path={ROUTES.GAMES_WEB} element={<GamesPageWEB />}/>

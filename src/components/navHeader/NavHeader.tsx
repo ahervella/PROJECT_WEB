@@ -35,7 +35,7 @@ function NavHeader() {
                     {/*Todo: bring this navBarHighlight out of this block so that nav exclusively has meta data to buttons and not the highlight too*/} 
                     <HighlightBar ref={highlightRef} />
 
-                    <NavHeaderButton highlightRef={highlightRef} titleLocKey="ABOUT" urlPath={ROUTES.ABOUT} isExternalLink={false} />
+                    <NavHeaderButton highlightRef={highlightRef} titleLocKey="ABOUT" urlPath={ROUTES.ABOUT} isExternalLink={false} matchURLExactly={true}/>
 
                     <NavHeaderButton highlightRef={highlightRef} titleLocKey="LINKEDIN" urlPath={ROUTES.LINKEDIN} isExternalLink={true} />
 

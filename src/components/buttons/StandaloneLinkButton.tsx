@@ -1,13 +1,11 @@
 import { StandaloneButton, type StandaloneButtonProps } from '$comps/buttons/StandaloneButton'
-import { useNavigation } from '$comps/buttons/useNavigation'
+import { useNavigation, type INavigable } from '$comps/buttons/useNavigation'
 import "$src/TextSizing.css"
 
-type StandaloneLinkButtonProps = {
-    externalUrl: string;
-} & StandaloneButtonProps
+type StandaloneLinkButtonProps = StandaloneButtonProps & INavigable
 
-export function StandaloneLinkButton( { externalUrl, ...rest }: StandaloneLinkButtonProps ){
-    const nav = useNavigation({ isExternalLink: true, urlPath: externalUrl });
+export function StandaloneLinkButton( { urlPath, isExternalLink, ...rest }: StandaloneLinkButtonProps ){
+    const nav = useNavigation({ isExternalLink, urlPath });
 
     return <StandaloneButton textClassName="textSmall" {...rest} onClick={nav.onClick} href={nav.href} target={nav.target} />
 }
