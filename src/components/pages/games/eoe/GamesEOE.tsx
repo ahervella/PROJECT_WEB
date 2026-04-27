@@ -30,6 +30,11 @@ export function GamesEOE(){
                 <InfoPageVideo videoURL={ROUTES.GAMES_EOE_VIDEO_TRAILER} videoTitleLocKey="GAMES_EOE_TITLE_TRAILER" />
             </InfoPageSection>
 
+            <InfoPageSection >
+                <InfoPageVideo videoURL={ROUTES.GAMES_EOE_ANDREA} videoTitleLocKey="GAMES_EOE_TITLE_ANDREA" />
+                <InfoPageText locKey="GAMES_EOE_BODY_ANDREA"/>
+            </InfoPageSection>
+
             <InfoPageSection subtitleLocKey="GAMES_EOE_TITLE_CON">
                 <InfoPageText locKey="GAMES_EOE_BODY_CON"/>
             </InfoPageSection>

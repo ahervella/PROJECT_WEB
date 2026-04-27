@@ -14,24 +14,17 @@ export function InfoPageSection( {children, className, subtitleLocKey, isVertica
 
     const finalClassName = `infoPageSection
     ${className || ""}
-    ${isVertical ? "vertical" : "horizontal"}
+    ${isVertical ? "vertical" : ""}
     ${isNested ? "" : "bottomDividerMargin"}`;
 
-    if( subtitleLocKey )
-    {
-        return(
-            <div>
-                <TText locKey={subtitleLocKey} className="infoPageSectionSubtitle textNorm" />
-                <div className={finalClassName}>
-                    {children}
-                </div>
-            </div>
-        )
-    }
-
     return(
-        <div className={finalClassName}>
-            {children}
+        <div>
+            { subtitleLocKey &&
+                <TText locKey={subtitleLocKey} className="infoPageSectionSubtitle textNorm" />
+            }
+            <div className={finalClassName}>
+                {children}
+            </div>
         </div>
     )
 }

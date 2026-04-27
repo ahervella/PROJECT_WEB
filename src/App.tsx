@@ -7,17 +7,29 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import { Games } from "$comps/pages/games/Games";
 import { GamesEOE } from "$comps/pages/games/eoe/GamesEOE"
+import { GamesGOTC } from "$comps/pages/games/gotc/GamesGOTC"
+import { GamesAAA } from "$comps/pages/games/aaa/GamesAAA"
+import { GamesLUN } from "$comps/pages/games/lun/GamesLUN"
+import { GamesWEB } from "$comps/pages/games/web/GamesWEB"
+import { GamesPICO8 } from "$comps/pages/games/pico8/GamesPICO8"
 
 import { AnimatePresence } from 'framer-motion';
+import { useEffect } from 'react';
 //import Art from "./pages/Art";
 //import Music from "./pages/Music";
 
 function App() {
   const location = useLocation();
 
-  return (
+  function ScrollToTop(){
+    const { pathname } = useLocation();
+    useEffect( () => { window.scrollTo( window.scrollX, 0 );}, [pathname])
+    return null;
+  }
 
+  return (
       <div className="pageMargins">
+            <ScrollToTop />
             <header>
                 <NewHeader />
             </header>
@@ -28,8 +40,13 @@ function App() {
                   <Route path={ROUTES.ABOUT} element={<About />}/>
                   <Route path={ROUTES.GAMES} element={<Games />}/>
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_EOE} element={<GamesEOE />}/>
+                  <Route path={ROUTES.GAMES + ROUTES.GAMES_GOTC} element={<GamesGOTC />}/>
+                  <Route path={ROUTES.GAMES + ROUTES.GAMES_AAA} element={<GamesAAA />}/>
+                  <Route path={ROUTES.GAMES + ROUTES.GAMES_LUN} element={<GamesLUN />}/>
+                  <Route path={ROUTES.GAMES + ROUTES.GAMES_WEB} element={<GamesWEB />}/>
+                  <Route path={ROUTES.GAMES + ROUTES.GAMES_PICO8} element={<GamesPICO8 />}/>
 
-                  {/* 
+                  {/*
                   <Route path={ROUTES.GAMES_GOTC} element={<GamesPageGOTC />}/>
                   <Route path={ROUTES.GAMES_WEB} element={<GamesPageWEB />}/>
                   <Route path={ROUTES.GAMES_PICO8} element={<GamesPagePICO8 />}/>

@@ -3,7 +3,7 @@ import { TText } from "$src/components/TText";
 
 import { useContext, useEffect } from "react";
 import { ImgBrowserContext } from "$comps/pages/imgBrowser/ImgBrowserContext";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { PageVariants } from "$src/constants";
 import { StandaloneButton } from "~/src/components/buttons/StandaloneButton";
 
@@ -66,24 +66,32 @@ export function ImgBrowser(){
     }
 
     return(
-        <>
+        <AnimatePresence>
             { imgBrowserContext != null && imgBrowserContext?.activeIndex !== null &&
-                <motion.div className="imgBrowser" variants={PageVariants} initial="initial" animate="enter" >
+                <motion.div className="imgBrowser" variants={PageVariants} initial="initial" animate="enter" exit="initial" >
+
                     <StandaloneButton className="imgBrowserButton closeButton" locKey="X" onClick={onCloseButtonClick}/>
 
                     <div className="marginedContent">
-                        <StandaloneButton className="imgBrowserButton" locKey={"<<"} onClick={onLeftButtonClick}/>
+                        {
+                            imgBrowserContext.imgs.length > 2 &&
 
+                            <StandaloneButton className="imgBrowserButton" locKey={"<<"} onClick={onLeftButtonClick}/>
+                        }
                         <div className="imgTextGroup">
                             <img className="img" src={currImgPath} alt="" />
                             <TText className="textNorm" locKey={currImgLocKey}/>
                         </div>
 
+                    {
+                        imgBrowserContext.imgs.length > 2 &&
+
                         <StandaloneButton className="imgBrowserButton" locKey=">>" onClick={onRightButtonClick}/>
+                    }
                     </div>
                 </motion.div>
             }
-        </>
+        </AnimatePresence>
         
     )   
 }

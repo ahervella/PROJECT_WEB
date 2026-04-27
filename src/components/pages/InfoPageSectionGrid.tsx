@@ -5,10 +5,10 @@ export type InfoPageSectionGridProps = {
     className?: string;
 } & InfoPageSectionProps
 
-export function InfoPageSectionGrid({children, className} : InfoPageSectionGridProps){
+export function InfoPageSectionGrid({children, className, ...rest} : InfoPageSectionGridProps){
 
     return (
-        <InfoPageSection className={`grid ${className || ""}`} >
+        <InfoPageSection {...rest} className={`grid ${className || ""}`} >
             {children}
         </InfoPageSection>
     )

@@ -27,50 +27,50 @@ export function Games(){
                         yearStart={2019}
                         yearEnd={2021}
                         gameLocKey='Game of Thrones: Conquest'
-                        isExternalLink={true}
-                        urlPath={ROUTES.GOTC}
+                        isExternalLink={false}
+                        urlPath={ROUTES.GAMES + ROUTES.GAMES_GOTC}
                     />
 
                 </div>
 
-                <div className="lineVertical gamesLineCenter">
-                    <hr/>
-                </div>
+                <div className="lineVertical gamesLineCenter"/>
 
-                <div className="gamesHalfGroup">
+                <div className="gamesGridWrapper">
                     <div className="textNorm gamesHalfGroupTitle">
                         <p><TText locKey="GAMES_PERSONAL_PROJS"/></p>
                     </div>
-                    
-                    <GamesEntryButton
-                        yearStart={2026}
-                        gameLocKey='WEB_PROJ'
-                        isExternalLink={true}
-                        urlPath={ROUTES.PICO8}
-                    />
-                    
-                    <GamesEntryButton
-                        yearStart={2025}
-                        gameLocKey='PICO_PROJ'
-                        isExternalLink={true}
-                        urlPath={ROUTES.PICO8}
-                    />
 
-                    <GamesEntryButton
-                        yearStart={2022}
-                        yearEnd={2023}
-                        gameLocKey='Aliens After Ava'
-                        isExternalLink={true}
-                        urlPath={ROUTES.AAA}
-                    />
+                    <div className="gamesGridGroup">
+                        <GamesEntryButton
+                            yearStart={2026}
+                            gameLocKey='PROJ_WEB'
+                            isExternalLink={false}
+                            urlPath={ROUTES.GAMES + ROUTES.GAMES_WEB}
+                        />
 
-                    <GamesEntryButton
-                        yearStart={2019}
-                        yearEnd={2021}
-                        gameLocKey='Lunarnaut'
-                        isExternalLink={true}
-                        urlPath={ROUTES.LUNARNAUT}
-                    />
+                        <GamesEntryButton
+                            yearStart={2025}
+                            gameLocKey='PROJ_PICO8'
+                            isExternalLink={false}
+                            urlPath={ROUTES.GAMES + ROUTES.GAMES_PICO8}
+                        />
+
+                        <GamesEntryButton
+                            yearStart={2022}
+                            yearEnd={2023}
+                            gameLocKey='Aliens After Ava'
+                            isExternalLink={false}
+                            urlPath={ROUTES.GAMES + ROUTES.GAMES_AAA}
+                        />
+
+                        <GamesEntryButton
+                            yearStart={2019}
+                            yearEnd={2021}
+                            gameLocKey='Lunarnaut'
+                            isExternalLink={false}
+                            urlPath={ROUTES.GAMES + ROUTES.GAMES_LUN}
+                        />
+                    </div>
 
                 </div>
             

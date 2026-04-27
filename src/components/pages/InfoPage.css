@@ -10,11 +10,15 @@
   justify-content: center;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
   gap: 40px;
-  margin-bottom: 80px;
 }
 
 .infoPageSection.vertical{
   flex-direction: column;
+  align-items: center;
+}
+
+.infoPageSection.bottomDividerMargin{
+  margin-bottom: 80px;
 }
 
 .infoPageSection.linkTextWrapper{
@@ -25,6 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .infoPageSection.grid{
@@ -35,7 +40,6 @@
   margin: 0 auto;
   justify-items: center;
   align-items: center;
-
 }
 
 .infoPageImg{
@@ -53,16 +57,17 @@
   min-width: 560px;
   min-height: 315px;
   cursor: pointer;
+  border: 2px solid rgb(255, 255, 255, 0.1);;
 }
 
 .infoPageBackButtonDiv{
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: end;
   height: 0px;
 }
 
 .buttonBase.standaloneButton.infoPageBackButton{
-  width: 50px;
+  width: 65px;
   height: 30px;
 }
