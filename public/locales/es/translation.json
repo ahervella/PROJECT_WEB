@@ -52,5 +52,11 @@
   "PROJ_PICO8_TITLE_IMG": "Proyecto PICO-8 - Arte conceptual",
   "PROJ_PICO8_TITLE_LUA": "Progreso de la programación con Lua",
   "GAMES_EOE_BODY_ANDREA": "Este fue un registro de desarrollo en el que participó mi amiga y ex compañera de trabajo, Andrea Carhuavilca, y explicó el diseño y los conceptos detrás del juego.",
-  "GAMES_EOE_TITLE_ANDREA": "Ecos de Elysium - Registro de desarrollo"
+  "GAMES_EOE_TITLE_ANDREA": "Ecos de Elysium - Registro de desarrollo",
+  "ART_ABOUT": "sobre el arte",
+  "ART_ABOUT_BODY": "Crecí dibujando dibujos animados y animando muñecos de palitos, fascinado por las películas animadas y los videojuegos. \nDividido entre la parte técnica y artística, después de graduarme de la escuela secundaria en 2016, decidí estudiar animación en la Escuela de Artes Visuales de la ciudad de Nueva York. \nDespués de tres semestres, me di cuenta de que anhelaba no sólo practicar un arte, sino también involucrarme en problemas y pensamientos más técnicos. \nMi cuarto semestre universitario fue un nuevo comienzo en la Universidad Northeastern, donde decidí dedicarme a ser ingeniero informático.\n\n\nSin embargo, mientras estudiaba en Northeastern, todavía encontré tiempo para disfrutar de mi amor por el arte, incluido el trabajo como diseñador gráfico en la estación de radio de la universidad, WRBB 104.9 FM, dibujar al aire libre o crear arte para mis proyectos personales.\n\n\nCon un deseo tanto de trabajo creativo como técnico, rápidamente me enamoré del mundo del desarrollo de videojuegos y seguí una carrera en desarrollo de juegos e ingeniería de software en general.\n\n\nIndependientemente de a dónde me lleve mi carrera, siempre he disfrutado y siempre amaré crear arte. \n¡Espero que disfrutes de mis garabatos!",
+  "ART_ABOUT_TITLE": "Érase una vez...",
+  "ART_ANIMATION": "animación",
+  "ART_DIGITAL": "digital",
+  "ART_DRAWINGS": "dibujos"
 }

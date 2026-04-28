@@ -1,9 +1,15 @@
 import './Games.css'
-import GamesEntryButton from './GamesEntryButton.tsx'
+import InfoPageEntryButton from '$comps/buttons/InfoPageEntryButton.tsx'
 import {ROUTES} from '$src/routes.ts'
 import { PageVariants } from '$src/constants.ts';
 import {TText} from "$comps/TText.tsx";
 import { motion } from "framer-motion";
+
+import eoeImg from "$assets/games/eoe/eoe-tall.jpg"
+import gotcImg from "$assets/games/gotc/gotc-banner.jpg"
+import aaaImg from "$assets/games/aaa/aaa-banner.png"
+import lunImg from "$assets/games/lun/lun-banner.png"
+import pico8Img from "$assets/games/pico8/pico-concept2.png"
 
 export function Games(){
 
@@ -15,20 +21,24 @@ export function Games(){
                         <p><TText locKey="GAMES_PRO_PROJS"/></p>
                     </div>
 
-                    <GamesEntryButton
+                    <InfoPageEntryButton
                         yearStart={2023}
                         yearEnd={2026}
-                        gameLocKey='Echoes of Elysium'
+                        locKey='Echoes of Elysium'
                         isExternalLink={false}
                         urlPath={ROUTES.GAMES + ROUTES.GAMES_EOE}
+                        imgPath={eoeImg}
+                        imgOffsetY="70%"
                     />
 
-                    <GamesEntryButton
+                    <InfoPageEntryButton
                         yearStart={2019}
                         yearEnd={2021}
-                        gameLocKey='Game of Thrones: Conquest'
+                        locKey='Game of Thrones: Conquest'
                         isExternalLink={false}
                         urlPath={ROUTES.GAMES + ROUTES.GAMES_GOTC}
+                        imgPath={gotcImg}
+                        imgOffsetY="85%"
                     />
 
                 </div>
@@ -41,34 +51,38 @@ export function Games(){
                     </div>
 
                     <div className="gamesGridGroup">
-                        <GamesEntryButton
+                        <InfoPageEntryButton
                             yearStart={2026}
-                            gameLocKey='PROJ_WEB'
+                            locKey='PROJ_WEB'
                             isExternalLink={false}
                             urlPath={ROUTES.GAMES + ROUTES.GAMES_WEB}
                         />
 
-                        <GamesEntryButton
+                        <InfoPageEntryButton
                             yearStart={2025}
-                            gameLocKey='PROJ_PICO8'
+                            locKey='PROJ_PICO8'
                             isExternalLink={false}
                             urlPath={ROUTES.GAMES + ROUTES.GAMES_PICO8}
+                            imgPath={pico8Img}
                         />
 
-                        <GamesEntryButton
+                        <InfoPageEntryButton
                             yearStart={2022}
                             yearEnd={2023}
-                            gameLocKey='Aliens After Ava'
+                            locKey='Aliens After Ava'
                             isExternalLink={false}
                             urlPath={ROUTES.GAMES + ROUTES.GAMES_AAA}
+                            imgPath={aaaImg}
                         />
 
-                        <GamesEntryButton
+                        <InfoPageEntryButton
                             yearStart={2019}
                             yearEnd={2021}
-                            gameLocKey='Lunarnaut'
+                            locKey='Lunarnaut'
                             isExternalLink={false}
                             urlPath={ROUTES.GAMES + ROUTES.GAMES_LUN}
+                            imgPath={lunImg}
+                            imgOffsetY="10%"
                         />
                     </div>
 

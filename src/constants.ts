@@ -1,5 +1,6 @@
+import { type Variants } from "framer-motion";
 
-export const PageVariants = {
+export const PageVariants: Variants = {
         initial: {
             opacity: 0,
             x: 50,

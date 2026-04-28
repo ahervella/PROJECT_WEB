@@ -2,8 +2,8 @@ import './ButtonBase.css'
 
 export type ButtonBaseProps = {
     children?: React.ReactNode; 
-    onMouseEnter?: (event : React.MouseEvent<HTMLAnchorElement>) => void;
-    onMouseLeave?: (event : React.MouseEvent<HTMLAnchorElement>) => void;
+    onMouseEnter?: () => void;
+    onMouseLeave?: () => void;
     onClick?: () => void;
     target?: string;
     href?: string;

@@ -14,7 +14,7 @@ export type LinkCont = {
 export function InfoPageLinkText( {linkConts, ...rest} : InfoPageLinkTextProps ){
 
     const buttons = linkConts.map( cont =>
-        <StandaloneLinkButton key={cont.externalUrl+cont.nameLocKey} urlPath={cont.externalUrl} locKey={cont.nameLocKey} />
+        <StandaloneLinkButton key={cont.externalUrl+cont.nameLocKey} urlPath={cont.externalUrl} locKey={cont.nameLocKey} isExternalLink={true} />
     )
 
     return(

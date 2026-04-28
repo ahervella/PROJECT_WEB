@@ -10,7 +10,7 @@ export interface IHighlightable extends HighlightRefProp, ButtonTextRefProp {}
 
 export function useHighlight( {highlightRef, buttonTextRef} : IHighlightable ){
 
-    function onMouseEnter( event: React.MouseEvent<HTMLAnchorElement> ){
+    function onMouseEnter(){
         if( highlightRef?.current == null || buttonTextRef?.current == null ){return;}
 
         console.log( "hello world")
@@ -37,7 +37,7 @@ export function useHighlight( {highlightRef, buttonTextRef} : IHighlightable ){
         `;
     }
 
-    function onMouseLeave( event: React.MouseEvent<HTMLAnchorElement> ){
+    function onMouseLeave(){
 
         if( highlightRef?.current == null ){return;}
 

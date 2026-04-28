@@ -4,13 +4,13 @@ export type ScaleButtonRefProp = {
 
 export function useScaleHighlight( {scaleButtonRef} : ScaleButtonRefProp ){
     
-    function onMouseEnter( event: React.MouseEvent<HTMLAnchorElement> ){
+    function onMouseEnter(){
         if( scaleButtonRef?.current == null ){return;}
         
         scaleButtonRef.current.classList.toggle( 'scaleHighlight', true );
     }
 
-    function onMouseExit( event: React.MouseEvent<HTMLAnchorElement> ){
+    function onMouseExit(){
         if( scaleButtonRef?.current == null ){return;}
 
         scaleButtonRef.current.classList.toggle( 'scaleHighlight', false );
