@@ -13,4 +13,8 @@ export default defineConfig({
       '$comps' : path.resolve(__dirname, './src/components')
     },
   },
+  base: './',
+  build: {
+    outDir: './build', // Change this to your desired path
+  },
 })
