@@ -17,7 +17,8 @@
 
 .gamesGridGroup{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 40px;
+  grid-template-columns: repeat(2, auto);
   justify-items: center;
   align-items: center;
   width: 100%;
@@ -28,7 +29,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
 }
 
@@ -36,8 +36,6 @@
   display: flex;
   justify-items: center;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
 }
 
@@ -49,6 +47,6 @@
 
 .lineVertical.gamesLineCenter{
   min-height: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
 }

@@ -12,11 +12,12 @@ export function useHighlight( {highlightRef, buttonTextRef} : IHighlightable ){
 
     function onMouseEnter(){
         if( highlightRef?.current == null || buttonTextRef?.current == null ){return;}
+        if( highlightRef.current.parentElement == null ){return;}
 
         console.log( "hello world")
 
         const buttonTextRect = buttonTextRef.current.getBoundingClientRect();
-
+        const highlightParentRef = highlightRef.current.parentElement.getBoundingClientRect();
         highlightRef.current.style.width = `${buttonTextRect.width}px`;
 
         const currHeight = highlightRef.current.clientHeight;
@@ -26,13 +27,10 @@ export function useHighlight( {highlightRef, buttonTextRef} : IHighlightable ){
 
         highlightRef.current.classList.toggle( 'showHeight', true );
 
-
-        console.log( "current height:" + highlightRef.current.style.height);
-
         highlightRef.current.style.transform = `
             translate(
-                ${buttonTextRect.left}px,
-                ${buttonTextRect.bottom}px
+                ${-highlightParentRef.x + buttonTextRect.left}px,
+                ${-highlightParentRef.y + buttonTextRect.bottom}px
             )
         `;
     }

@@ -1,5 +1,5 @@
 .navBarHighlight{
-  position: fixed;
+  position: absolute;
   width: 0;
   height: 0;
   background: white;
@@ -22,4 +22,31 @@
     transform 0.25s ease,
     width 0.25s ease,
     height 0.25s ease;
+}
+
+/*TODO:
+part of phone view hack: super hack below for getting the highlight bar to be positioned properly, but makes hight still grow... tbd*/
+
+@media (max-width: 1160px) {
+  .navBarHighlight { zoom: 1.1428571429; }
+}
+
+@media (max-width: 1015px) {
+  .navBarHighlight { zoom: 1.3333; }
+}
+
+@media (max-width: 870px) {
+  .navBarHighlight { zoom: 1.6; }
+}
+
+@media (max-width: 725px) {
+  .navBarHighlight { zoom: 2; }
+}
+
+@media (max-width: 580px) {
+  .navBarHighlight { zoom: 4.2105263158; }
+}
+
+@media (max-width: 435px) {
+  .navBarHighlight { zoom: 4; }
 }

@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')!).render(
         Loading...
       </div>
     }>
-      <Router>
+      <Router basename="/PROJECT_WEB/">
         <App />
       </Router>
     </React.Suspense>
