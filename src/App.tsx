@@ -17,6 +17,8 @@ import { AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
 import { ArtAbout } from "$comps/pages/art/ArtAbout";
 import { ArtNavHeader } from '$comps/navHeader/ArtNavHeader.tsx';
+import { ArtDrawings } from '~/src/components/pages/art/ArtDrawings.tsx';
+import { ArtDigital } from '~/src/components/pages/art/ArtDigital.tsx';
 //import Music from "./pages/Music";
 
 function App() {
@@ -51,6 +53,8 @@ function App() {
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_PICO8} element={<GamesPICO8 />}/>
 
                   <Route path={ROUTES.ART} element={<ArtAbout />}/>
+                  <Route path={ROUTES.ART + ROUTES.ART_DRAWINGS} element={<ArtDrawings />}/>
+                  <Route path={ROUTES.ART + ROUTES.ART_DIGITAL} element={<ArtDigital />}/>
                   {/*
                   <Route path={ROUTES.GAMES_GOTC} element={<GamesPageGOTC />}/>
                   <Route path={ROUTES.GAMES_WEB} element={<GamesPageWEB />}/>

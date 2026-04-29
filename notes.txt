@@ -1,3 +1,8 @@
+TODO clean up:
+- decide how to organize grid CSS for games and art sections, and where px or column sizing goes in one spot
+- remove zoom hack
+    - fix wonky ness with hilightbar changing sizes at different zoom levels
+
 
 todo:
 - make constant in css for animate time for active fade
