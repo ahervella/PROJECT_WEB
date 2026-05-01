@@ -3,7 +3,7 @@ import './InfoPageEntryButton.css'
 import {ButtonBase, type ButtonBaseProps} from '$comps/buttons/ButtonBase.tsx'
 import { HighlightBar, useCreateHighlightRef, useCreateButtonTextRef } from '$comps/buttons/HighlightBar';
 import { useHighlight } from '$comps/buttons/useHighlight';
-import {TText, getText} from '$comps/TText.tsx'
+import {TText, useLocText} from '$comps/TText.tsx'
 import "$src/TextSizing.css";
 import { useNavigation, type INavigable } from '$comps/buttons/useNavigation';
 import type { CSSProperties } from 'react';
@@ -34,7 +34,7 @@ function InfoPageEntryButton( {yearStart, yearEnd, imgPath, locKey, imgOffsetX, 
             {
                 imgPath &&
                 <>
-                    <img className="imgBox" src={imgPath} alt={getText(locKey)} style={imgStyle}/>
+                    <img className="imgBox" src={imgPath} alt={useLocText(locKey)} style={imgStyle}/>
                     <HighlightBar ref={highlightRef}/>
                     {
                         yearStart &&

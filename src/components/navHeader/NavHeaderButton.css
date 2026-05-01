@@ -8,7 +8,7 @@
 }
 
 .navBarButton.active {
-  background: white;
+  background: var(--fontClr);
 }
 
 .navBarButtonText{

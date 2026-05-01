@@ -17,6 +17,11 @@
   line-height: 1.6;
   font-family: IBMPlexMono, Arial, Helvetica, sans-serif;
 }
+.textLarge.IBM{
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-family: IBMPlexMono, Arial, Helvetica, sans-serif;
+}
 
 .textSmall{
   font-size: 1.25rem;

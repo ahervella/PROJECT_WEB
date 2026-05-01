@@ -2,7 +2,7 @@
   position: absolute;
   width: 0;
   height: 0;
-  background: white;
+  background: var(--scndClr);
   pointer-events: none;
   mix-blend-mode: difference;
   top: 0;

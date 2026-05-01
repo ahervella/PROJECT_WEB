@@ -1,3 +1,7 @@
 .translationText{
     white-space: pre-line;
 }
+
+.scndClr{
+  color: var(--scndClr);
+}

@@ -3,14 +3,13 @@
   "LINKEDIN": "linkedIn",
   "GITHUB": "gitHub",
   "BUTTON_BACK": "<< back",
-  "GAMES": "projects",
+  "GAMES": "work",
   "GAMES_PRO_PROJS": "Professional Projects",
   "GAMES_PERSONAL_PROJS": "Personal Projects",
   "GAMES_EOE_BODY1": "Echoes of Elysium was the last professional full-time game I worked on with Loric Games for 3 years from January 2023 until February 2026. Echoes of Elysium is a sandbox survival-crafting multiplayer game that takes you to the skies in search for the answers from the past. Along the journey the player builds their homebase on their airship while fighting mythical clockwork beasts.",
   "GAMES_EOE_BODY2": "The game is multiplayer with up to 10 players at a time. Players can host their own local games or play together via dedicated servers. Working together is essential for success and large ships.",
   "ART": "art",
   "MUSIC": "music",
-  "ABOUT_BODY": "Hello!\n\nMy name is Alejandro, I come in peace, and I'm an engineer and game developer (and passtime artist). I love all things computers, art, retro technology, people, and of course, videogames.\n\nPlease feel free to reach out about anything.\n\nI'll see you at the arcade!\n\nahervella@me.com",
   "PRESENT": "present",
   "URL_WEBSITE": "website",
   "URL_STEAM": "Steam page",
@@ -60,5 +59,11 @@
   "ART_ABOUT_BODY": "I grew up drawing cartoons and animating stick figures, fascinated by animated movies and videogames. Split between the technical and artistic part, after graduating high school in 2016, I decided to study animation at the School of Visual Arts in New York City. After three semesters, I realized that I yearned to not only practice an art, but to also engage with more technical problems and thinking. My fourth college semester was a brand new start at Northeastern University where I decided to instead pursue being a Computer Engineer.\n\nYet while studying at Northeastern, I still found time to indulge in my love for art including working as a graphic designer at the university's radio station, WRBB 104.9 FM, drawing outside, or creating art for my personal projects.\n\nWith a desire for both creative and technical work, I quickly became enamored with the world of developing videogames, and pursued a career in game development and general software engineering.\n\nRegardless of where my career takes me, I've always enjoyed and forever will love creating art. I hope you enjoy my doodles!",
   "ART_ABOUT_TITLE": "Once upon a time...",
   "ART_DRAWINGS_BODY": "Here are some of the drawings I've done over the years, most of them in random sketch books, some with more dedicated time. I love drawing nature, people, cities, and all things sci-fi!",
-  "ART_DIGITAL_BODY": "These are some of the few digital still pieces I've made over the years using digital software."
+  "ART_DIGITAL_BODY": "These are some of the few digital still pieces I've made over the years using digital software.",
+  "ABOUT_BODY1": "Hello, I'm Alejandro!\n\nI come in peace, and I'm a <span class=\"scndClr\">software engineer</span> with a love for all things computers, retro technology, and videogames.\n\nI live in New York City, but am looking for in-person work in <span class=\"scndClr\">Barcelona</span> or <span class=\"scndClr\">Madrid</span> and plan to relocate.",
+  "ABOUT_BODY3": "Spanish (native), English (native), French (basic)",
+  "ABOUT_BODY2": "I have 4+ years of experience building real-time systems, backend infrastructure, and developer tools with large 100+ person studios and small start-ups. I'm excited to collaborate with new teams and take on new challenges.",
+  "ABOUT_SPOKEN_LANGS": "Spoken Languages",
+  "ABOUT_PRGM_LANGS": "Programming Languages",
+  "ABOUT_TOOLS_TECH": "Tools & Technologies"
 }

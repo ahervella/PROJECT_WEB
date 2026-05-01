@@ -2,6 +2,7 @@
   --debugBorderClr: rgb(255, 0, 0, 0.75);
   --debugBorderSize: 0px;
   --fontClr: white;
+  --scndClr: rgb(255, 163, 130);/*rgb(255, 163, 130);*/
 }
 
 @font-face{
@@ -17,7 +18,7 @@
 body{
   font-family: VT323, Arial, Helvetica, sans-serif;
   color: var(--fontClr);
-  background-color: black;
+  background-color: rgb(18, 18, 18);
   font-weight: normal;
 }
 

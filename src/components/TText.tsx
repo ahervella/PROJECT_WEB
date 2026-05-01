@@ -7,13 +7,13 @@ export type TTextProps = {
     ref?: React.RefObject<HTMLSpanElement | null>;
 }
 
-export function getText( locKey: string ){
+export function useLocText( locKey: string ){
     const {t} = useTranslation();
-    return t(locKey);
+    return t(locKey, {interpolation: {escapeValue: false}});//return t(locKey);
 }
 
-export function TText( {locKey, className, ref} : TTextProps ){
+export function TText( {locKey, className, ...rest} : TTextProps ){
     return(
-        <span ref={ref} className={`translationText ${className || ""} `}>{getText(locKey)}</span>
+        <span {...rest} className={`translationText ${className || ""} `} dangerouslySetInnerHTML={ {__html: useLocText(locKey)}}/>
     )
 }

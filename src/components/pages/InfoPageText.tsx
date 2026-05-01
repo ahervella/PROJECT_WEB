@@ -4,8 +4,9 @@ import {TText, type TTextProps} from "$comps/TText";
 
 export type InfoPageTextProps = TTextProps;
 
-export function InfoPageText( {...rest} : InfoPageTextProps){
+export function InfoPageText( { className,  ...rest} : InfoPageTextProps){
+
     return(
-        <TText {...rest}className="textNorm IBM infoPageText" />
+        <TText {...rest} className={`infoPageText ${className || "textNorm IBM"}`} />
     )
 }

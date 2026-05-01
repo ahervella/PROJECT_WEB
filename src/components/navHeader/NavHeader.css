@@ -4,7 +4,7 @@
   max-height: 50px;
   align-items: center;
   justify-content: space-between;
-  
+  color: var(--scndClr);
 }
 
 .navBar{
@@ -20,6 +20,13 @@
   margin-bottom: 75px;
 }
 
+.langNavBar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
 .navBarButtonGroup{
   position: relative;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
@@ -33,7 +40,7 @@
 .line{
   height: 2px;
   border: none;
-  background-color: white;
+  background-color: var(--fontClr);
 }
 
 .line.leftNavBar{

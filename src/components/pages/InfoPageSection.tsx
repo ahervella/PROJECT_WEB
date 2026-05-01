@@ -6,14 +6,16 @@ export type InfoPageSectionProps = {
     children?: React.ReactNode;
     className?: string;
     subtitleLocKey?: string;
+    centerItems?: boolean;
     isVertical?: boolean;
     isNested?: boolean;
 }
 
-export function InfoPageSection( {children, className, subtitleLocKey, isVertical, isNested}: InfoPageSectionProps ) {
+export function InfoPageSection( {children, className, subtitleLocKey, centerItems, isVertical, isNested}: InfoPageSectionProps ) {
 
     const finalClassName = `infoPageSection
     ${className || ""}
+    ${centerItems? "centerItems" : ""}
     ${isVertical ? "vertical" : ""}
     ${isNested ? "" : "bottomDividerMargin"}`;
 

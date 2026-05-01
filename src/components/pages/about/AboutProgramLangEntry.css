@@ -1,0 +1,14 @@
+.programLangEntry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    gap: 10px;
+}
+
+.programLangEntryIcon{
+    width: 50px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}

@@ -7,17 +7,81 @@ import "$src/TextSizing.css";
 import {InfoPageSection} from "$comps/pages/InfoPageSection";
 import {InfoPageImg} from "$comps/pages/InfoPageImg.tsx"
 import {InfoPageText} from "$comps/pages/InfoPageText.tsx"
+import "$src/TextSizing.css"
+import { InfoPageSectionGrid } from '$comps/pages/InfoPageSectionGrid';
+import { AboutProgramLangEntry } from './AboutProgramLangEntry';
+
+import csharp from "$assets/skillsIcons/csharp.svg";
+import cpp from "$assets/skillsIcons/cpp.svg";
+import java from "$assets/skillsIcons/java.svg";
+import html from "$assets/skillsIcons/html5.svg"
+import css from "$assets/skillsIcons/css3.svg"
+import python from "$assets/skillsIcons/python.svg"
+import react from "$assets/skillsIcons/react.svg"
+import typescript from "$assets/skillsIcons/typescript.svg"
+import unity from "$assets/skillsIcons/unity.svg"
+import git from "$assets/skillsIcons/git.svg"
+import github from "$assets/skillsIcons/github.svg"
+import visualstudio from "$assets/skillsIcons/visualstudio.svg"
+import unreal from "$assets/skillsIcons/unreal.svg"
+import steam from "$assets/skillsIcons/steam.svg"
+import claude from "$assets/skillsIcons/claude.svg"
+import javascript from "$assets/skillsIcons/javascript.svg"
+import c from "$assets/skillsIcons/c.svg"
+import lua from "$assets/skillsIcons/lua.svg"
+import perforce from "$assets/skillsIcons/perforce.svg"
+import wwise from "$assets/skillsIcons/wwise.svg"
+import latex from "$assets/skillsIcons/latex.svg"
+import pico8 from "$assets/skillsIcons/pico8.svg"
+import godot from "$assets/skillsIcons/godot.svg"
 
 function About(){
 
     return(          
         <PageBase>
 
-            <InfoPageSection>
-                <InfoPageImg imgPath={profileImg} imgLocKey="Alejandro Hervella" />
-                <InfoPageText locKey="ABOUT_BODY" />
+            <InfoPageSection centerItems={true} >
+                <InfoPageImg className="profile" imgPath={profileImg} imgLocKey="Alejandro Hervella" />
+                <InfoPageText className="textLarge IBM" locKey="ABOUT_BODY1" />
+            </InfoPageSection>
+
+            <InfoPageSection isVertical={true}>
+                <InfoPageText className='textNorm IBM' locKey="ABOUT_BODY2" />
             </InfoPageSection>
             
+            <InfoPageSection subtitleLocKey='ABOUT_SPOKEN_LANGS' >
+                <InfoPageText className='textNorm IBM' locKey="ABOUT_BODY3" />
+            </InfoPageSection>
+
+            <InfoPageSectionGrid subtitleLocKey='ABOUT_PRGM_LANGS' centerItems={true}>
+                <AboutProgramLangEntry imgPath={cpp} locKey="C++" />
+                <AboutProgramLangEntry imgPath={csharp} locKey="C#" />
+                <AboutProgramLangEntry imgPath={c} locKey="C" />
+                <AboutProgramLangEntry imgPath={lua} locKey="Lua" />
+                <AboutProgramLangEntry imgPath={typescript} locKey="TypeScript" />
+                <AboutProgramLangEntry imgPath={html} locKey="HTML" />
+                <AboutProgramLangEntry imgPath={css} locKey="CSS" />
+                <AboutProgramLangEntry imgPath={javascript} locKey="JavaScript" />
+                <AboutProgramLangEntry imgPath={java} locKey="Java" />
+                <AboutProgramLangEntry imgPath={python} locKey="Python" />
+
+            </InfoPageSectionGrid>
+
+            <InfoPageSectionGrid subtitleLocKey='ABOUT_TOOLS_TECH' centerItems={true}>
+                <AboutProgramLangEntry imgPath={unity} locKey="Unity" />
+                <AboutProgramLangEntry imgPath={git} locKey="Git" />
+                <AboutProgramLangEntry imgPath={github} locKey="GitHub" />
+                <AboutProgramLangEntry imgPath={perforce} locKey="Perforce" />
+                <AboutProgramLangEntry imgPath={visualstudio} locKey="Visual Studio" />
+                <AboutProgramLangEntry imgPath={react} locKey="React" />
+                <AboutProgramLangEntry imgPath={wwise} locKey="Wwise" />
+                <AboutProgramLangEntry imgPath={claude} locKey="Claude Code AI" />
+                <AboutProgramLangEntry imgPath={latex} locKey="LaTeX" />
+                <AboutProgramLangEntry imgPath={unreal} locKey="Unreal Engine" />
+                <AboutProgramLangEntry imgPath={pico8} locKey="PICO-8" />
+                <AboutProgramLangEntry imgPath={godot} locKey="Godot Engine" />
+                <AboutProgramLangEntry imgPath={steam} locKey="Steamworks" />
+            </InfoPageSectionGrid>
         </PageBase>
     
     )
