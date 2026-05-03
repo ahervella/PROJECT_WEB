@@ -16,6 +16,7 @@ export default defineConfig({
         "img-src": ["'self'", "data:", "https:"],
         "font-src": ["'self'", "data:"],
         "connect-src": ["'self'"],
+        "frame-src": ["https://www.youtube.com"],
         "object-src": ["'none'"],
         "base-uri": ["'self'"],
         "form-action": ["'self'"],
