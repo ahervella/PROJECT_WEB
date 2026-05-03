@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     csp({
       algorithm: "sha256",
-      dev: { run: true },
+      dev: { run: false },
       policy: {
         "script-src": ["'self'"],
         "style-src": ["'self'", "'unsafe-inline'"],

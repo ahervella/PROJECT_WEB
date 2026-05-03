@@ -1,6 +1,5 @@
 .infoPageSectionSubtitle{
   display: block;
-  text-decoration: underline;
   margin-bottom: 30px;
   color: var(--scndClr);
 }
@@ -44,7 +43,7 @@
   justify-content: center;
   column-gap: 50px;
   width: 100%;
-  align-items: center;
+  align-items: flex-end;
 
 }
 
