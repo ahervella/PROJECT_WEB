@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <script>
       // GitHub Pages Single Page App redirect hack:
-      // Encodes the path after the base (/PROJECT_WEB/) as a query param
+      // Encodes the path after the base (/) as a query param
       // and redirects to the root so index.html can restore it for React Router.
-      var segmentCount = 1;
+      var segmentCount = 0;
       const l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
