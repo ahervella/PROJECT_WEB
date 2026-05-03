@@ -1,4 +1,7 @@
 .profile{
   border-radius: 50%;
   object-fit: cover;
+  /* Safari requires explicit equal dimensions for object-fit: cover to work correctly */
+  width: 300px !important;
+  height: 300px !important;
 }
