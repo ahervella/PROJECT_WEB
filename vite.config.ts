@@ -1,10 +1,27 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import csp from 'vite-plugin-csp-guard'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    csp({
+      algorithm: "sha256",
+      dev: { run: true },
+      policy: {
+        "script-src": ["'self'"],
+        "style-src": ["'self'", "'unsafe-inline'"],
+        "img-src": ["'self'", "data:", "https:"],
+        "font-src": ["'self'", "data:"],
+        "connect-src": ["'self'"],
+        "object-src": ["'none'"],
+        "base-uri": ["'self'"],
+        "form-action": ["'self'"],
+      },
+    }),
+  ],
   resolve: {
     alias: {
       '~': path.resolve(__dirname, './'),
