@@ -15,7 +15,7 @@ function NavHeader() {
     return (
         <header>
             <div className="topTitle">
-                <title>Alejandro Hervella | Portfolio</title>
+                <title>Alejandro Hervella</title>
                 <h1 className={'textSiteTitle'}>Alejandro Hervella</h1>
                 
                 <span className='langNavBar'>
