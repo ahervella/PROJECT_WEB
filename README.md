@@ -1,6 +1,6 @@
 # PROJ_WEB
 
-This is the work-in-progress for my new personal website! My current site, [which you can see here](https://www.alejandrohervella.com/), was something I created years ago with Wix. As a means of expandanding my software engineering skill set, the goal of this project is to:
+This is the work-in-progress for my new personal website! My previous site was something I created years ago with Wix. As a means of expandanding my software engineering skill set, the goal of this project is to:
 
 1) Make a new personal website for hosting my portfolio in English and Spanish
 2) Use modern robust industry standards and tech stacks even if it's overkill for the sake of learning
