@@ -37,10 +37,6 @@ export function GamesPICO8(){
             </InfoPageSection>
 
             <InfoPageSection subtitleLocKey="PROJ_PICO8_TITLE_LUA">
-                <InfoPageText locKey="PROJ_PICO8_BODY3"/>
-            </InfoPageSection>
-
-            <InfoPageSection>
                 <InfoPageText locKey="PROJ_PICO8_BODY4"/>
             </InfoPageSection>
         </PageBase>
