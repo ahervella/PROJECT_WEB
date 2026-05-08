@@ -20,6 +20,7 @@ export function GamesPICO8(){
         <PageBase prevPage={ROUTES.GAMES}>
 
             <InfoPageSectionGrid subtitleLocKey="PROJ_PICO8">
+                <InfoPageText locKey="PROJ_PICO8_BODY0" />
                 <InfoPageImg width={400} imgPath={picoConcept1} imgLocKey="PROJ_PICO8_TITLE_IMG"/>
                 <InfoPageImg width={400} imgPath={picoConcept2} imgLocKey="PROJ_PICO8_TITLE_IMG"/>
             </InfoPageSectionGrid>
