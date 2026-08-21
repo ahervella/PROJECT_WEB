@@ -25,10 +25,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '~': path.resolve(__dirname, './'),
-      '$src': path.resolve(__dirname, './src'),
-      '$assets': path.resolve(__dirname, './src/assets'),
-      '$comps' : path.resolve(__dirname, './src/components')
+      '~': path.resolve(import.meta.dirname, './'),
+      '$src': path.resolve(import.meta.dirname, './src'),
+      '$assets': path.resolve(import.meta.dirname, './src/assets'),
+      '$comps' : path.resolve(import.meta.dirname, './src/components')
     },
   },
   base: '/',

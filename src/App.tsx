@@ -3,7 +3,7 @@ import NewHeader from '$comps/navHeader/NavHeader.tsx'
 import About from '$comps/pages/about/About.tsx'
 import { ROUTES } from './routes.ts';
 
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 
 import { Games } from "$comps/pages/games/Games";
 import { GamesEOE } from "$comps/pages/games/eoe/GamesEOE"
@@ -49,6 +49,7 @@ function App() {
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_GOTC} element={<GamesGOTC />}/>
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_AAA} element={<GamesAAA />}/>
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_LUN} element={<GamesLUN />}/>
+                  <Route path={ROUTES.GAMES_LUN_LEGACY} element={<Navigate to={ROUTES.GAMES + ROUTES.GAMES_LUN} replace />}/>
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_WEB} element={<GamesWEB />}/>
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_PICO8} element={<GamesPICO8 />}/>
 

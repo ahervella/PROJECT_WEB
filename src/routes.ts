@@ -23,6 +23,7 @@ export const ROUTES = {
     GAMES_AAA_STEAM: "https://store.steampowered.com/app/1995780/Aliens_After_Ava/",
     GAMES_AAA_GITHUB: "https://github.com/ahervella/ALIENS_AFTER_AVA_2022",
     GAMES_LUN: "/lun",
+    GAMES_LUN_LEGACY: "/lunarnaut",
     GAMES_LUN_GODOT_DEMO: "https://itch.io/embed-upload/3176855?color=8d0000",
     GAMES_LUN_UNITY_DEMO: "https://www.youtube.com/embed/_JfF-pnd-tE?si=Wn4j_y8xe3Dq6Ynx",
     
