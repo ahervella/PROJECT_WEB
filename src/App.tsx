@@ -11,6 +11,7 @@ import { GamesGOTC } from "$comps/pages/games/gotc/GamesGOTC"
 import { GamesAAA } from "$comps/pages/games/aaa/GamesAAA"
 import { GamesLUN } from "$comps/pages/games/lun/GamesLUN"
 import { GamesWEB } from "$comps/pages/games/web/GamesWEB"
+import { GamesMEMALLOC } from "$comps/pages/games/memalloc/GamesMEMALLOC"
 import { GamesPICO8 } from "$comps/pages/games/pico8/GamesPICO8"
 
 import { AnimatePresence } from 'framer-motion';
@@ -51,6 +52,7 @@ function App() {
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_LUN} element={<GamesLUN />}/>
                   <Route path={ROUTES.GAMES_LUN_LEGACY} element={<Navigate to={ROUTES.GAMES + ROUTES.GAMES_LUN} replace />}/>
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_WEB} element={<GamesWEB />}/>
+                  <Route path={ROUTES.GAMES + ROUTES.GAMES_MEMALLOC} element={<GamesMEMALLOC />}/>
                   <Route path={ROUTES.GAMES + ROUTES.GAMES_PICO8} element={<GamesPICO8 />}/>
 
                   <Route path={ROUTES.ART} element={<ArtAbout />}/>

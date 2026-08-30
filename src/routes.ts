@@ -14,6 +14,7 @@ export const ROUTES = {
     GAMES_GOTC_SITE: "https://www.gotconquest.com/",
     GAMES_GOTC_APPSTORE: "https://apps.apple.com/us/app/game-of-thrones-conquest/id1035712810",
     GAMES_WEB: "/proj-web",
+    GAMES_MEMALLOC: "/proj-memalloc",
     GAMES_PICO8: "/proj-pico8",
     GAMES_PICO8_SITE: "https://www.lexaloffle.com/pico-8.php",
     GAMES_AAA: "/aaa",
@@ -37,5 +38,6 @@ export const ROUTES = {
     GOTC: "https://www.gotconquest.com/",
     LUNARNAUT: "https://github.com/ahervella/LUNARNAUT_UNITY_2021",
     PICO8: "https://github.com/ahervella/PROJECT_PICO8",
-    WEBPAGE: "https://github.com/ahervella/PROJ_WEB"
+    WEBPAGE: "https://github.com/ahervella/PROJ_WEB",
+    MEMALLOC: "https://github.com/ahervella/PROJECT_MEMORY-ALLOCATOR"
 };

@@ -53,6 +53,14 @@ export function Games(){
                     <div className="gamesGridGroup">
                         <InfoPageEntryButton
                             yearStart={2026}
+                            yearEnd={2026}
+                            locKey='PROJ_MEMALLOC'
+                            isExternalLink={false}
+                            urlPath={ROUTES.GAMES + ROUTES.GAMES_MEMALLOC}
+                        />
+
+                        <InfoPageEntryButton
+                            yearStart={2026}
                             locKey='PROJ_WEB'
                             isExternalLink={false}
                             urlPath={ROUTES.GAMES + ROUTES.GAMES_WEB}
