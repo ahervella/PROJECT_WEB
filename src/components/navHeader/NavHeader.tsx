@@ -16,7 +16,9 @@ function NavHeader() {
         <header>
             <div className="topTitle">
                 <title>Alejandro Hervella</title>
-                <h1 className={'textSiteTitle'}>Alejandro Hervella</h1>
+                <h1 className={'textSiteTitle'}>
+                    <a href={ROUTES.ABOUT} className='titleLink'>Alejandro Hervella</a>
+                </h1>
                 
                 <span className='langNavBar'>
                     {/* Class on nav bar needed to avoid edge case of having containing block be viewport and css and javascript disagree on parent positioning since javascript devault gives an empty /body parent that defaults to browser margins of 8, 8*/}

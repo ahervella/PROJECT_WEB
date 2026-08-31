@@ -7,6 +7,11 @@
   color: var(--scndClr);
 }
 
+.titleLink{
+  color: inherit;
+  text-decoration: none;
+}
+
 .navBar{
   position: relative;
   border: var(--debugBorderSize) solid var(--debugBorderClr);
