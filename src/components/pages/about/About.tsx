@@ -41,7 +41,7 @@ function About(){
         <PageBase>
 
             <InfoPageSection centerItems={true} >
-                <InfoPageImg className="profile" imgPath={profileImg} imgLocKey="Alejandro Hervella" />
+                <InfoPageImg className="profile" imgPath={profileImg} imgLocKey="SITE_TITLE" />
                 <InfoPageText className="textLarge IBM" locKey="ABOUT_BODY1" />
             </InfoPageSection>
 

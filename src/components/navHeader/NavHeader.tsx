@@ -2,6 +2,7 @@ import './NavHeader.css';
 import {NavHeaderButton} from './NavHeaderButton.tsx'
 import HeaderLangButton from './NavHeaderLangButton.tsx'
 import { HighlightBar, useCreateHighlightRef } from "$comps/buttons/HighlightBar.tsx";
+import { TText } from "$comps/TText.tsx";
 import {ROUTES} from '$src/routes.ts'
 import '$src/TextSizing.css';
 import globe from "$assets/globe.svg"
@@ -17,7 +18,7 @@ function NavHeader() {
             <div className="topTitle">
                 <title>Alejandro Hervella</title>
                 <h1 className={'textSiteTitle'}>
-                    <a href={ROUTES.ABOUT} className='titleLink'>Alejandro Hervella</a>
+                    <a href={ROUTES.ABOUT} className='titleLink'><TText locKey="SITE_TITLE" /></a>
                 </h1>
                 
                 <span className='langNavBar'>
