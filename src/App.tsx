@@ -20,6 +20,7 @@ import { ArtAbout } from "$comps/pages/art/ArtAbout";
 import { ArtNavHeader } from '$comps/navHeader/ArtNavHeader.tsx';
 import { ArtDrawings } from '~/src/components/pages/art/ArtDrawings.tsx';
 import { ArtDigital } from '~/src/components/pages/art/ArtDigital.tsx';
+import { ExplicitLangProvider } from '$src/i18n/ExplicitLangProvider.tsx';
 //import Music from "./pages/Music";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
   }
 
   return (
+    <ExplicitLangProvider>
       <div className="pageMargins">
             <ScrollToTop />
             <header>
@@ -72,6 +74,7 @@ function App() {
               </AnimatePresence>
             </main>
       </div>
+    </ExplicitLangProvider>
   )
 }
 
