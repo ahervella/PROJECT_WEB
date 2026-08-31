@@ -156,6 +156,7 @@ dist-ssr
 /build
 /.claude
 *.local
+CLAUDE.md
 
 # Editor directories and files
 .vscode/*
