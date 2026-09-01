@@ -65,9 +65,13 @@
   "ART_DRAWINGS_BODY": "Here are some of the drawings I've done over the years, most of them in random sketch books, some with more dedicated time. I love drawing nature, people, cities, and all things sci-fi!",
   "ART_DIGITAL_BODY": "These are some of the few digital still pieces I've made over the years using digital software.",
   "ABOUT_BODY1": "Hello, I'm Alejandro!\n\nI come in peace, and I'm a <span class=\"scndClr\">software engineer</span> with a love for all things computers, retro technology, and interactive software.\n\nI live in Barcelona, and am looking for in-person work here in <span class=\"scndClr\">Barcelona</span> or in <span class=\"scndClr\">Madrid</span> with plans to relocate as needed.",
-  "ABOUT_BODY3": "Spanish (native), English (native), French (basic)",
+  "ABOUT_BODY3": "Spanish (native), English (native)",
   "ABOUT_BODY2": "I have 4+ years of experience building real-time systems, backend infrastructure, and developer tools with large 100+ person studios and small start-ups. I'm excited to collaborate with new teams and take on new challenges.\n\nPlease reach out to me at <a class=\"scndClr\" href=\"mailto:ahervella@me.com\">ahervella@me.com</a> regarding any job oppertunities, I look forward to hearing from you!",
   "ABOUT_SPOKEN_LANGS": "Spoken Languages",
   "ABOUT_PRGM_LANGS": "Programming Languages",
-  "ABOUT_TOOLS_TECH": "Tools & Technologies"
+  "ABOUT_TOOLS_TECH": "Tools & Technologies",
+  "ABOUT_SYS_CONCEPTS": "Systems & Concepts",
+  "ABOUT_SYS_CONCEPTS_BODY": "Gameplay Systems, RAII, Memory Management, Performance Optimization, Networking, Asynchronous Programming, OOP, MVC, Finite-State Machines, 3D Math & Physics (Collisions, Vectors, Quaternions)",
+  "ABOUT_FAMILIAR": "Familiar",
+  "ABOUT_FAMILIAR_BODY": "Java, SQL, Linux/Unix, Assembly (MIPS, x86-64), Bash, YAML, React.js, TypeScript, JavaScript, HTML, CSS"
 }
