@@ -73,5 +73,5 @@
   "ABOUT_SYS_CONCEPTS": "Systems & Concepts",
   "ABOUT_SYS_CONCEPTS_BODY": "Gameplay Systems, RAII, Memory Management, Performance Optimization, Networking, Asynchronous Programming, OOP, MVC, Finite-State Machines, 3D Math & Physics (Collisions, Vectors, Quaternions)",
   "ABOUT_FAMILIAR": "Familiar",
-  "ABOUT_FAMILIAR_BODY": "Java, SQL, Linux/Unix, Assembly (MIPS, x86-64), Bash, YAML, React.js, TypeScript, JavaScript, HTML, CSS"
+  "ABOUT_FAMILIAR_BODY": "Java, Python, SQL, Assembly (MIPS, x86-64), Bash, YAML, React.js, TypeScript, JavaScript, HTML, CSS"
 }
