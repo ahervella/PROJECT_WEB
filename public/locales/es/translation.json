@@ -64,10 +64,14 @@
   "ART_DRAWINGS": "dibujos",
   "ABOUT_BODY1": "¡Hola, soy Alejandro!\n\nVengo en paz, y soy <span class=\"scndClr\">ingeniero de software</span> con pasión por todo lo relacionado con la informática, la tecnología retro y el software interactivo.\n\nVivo en Barcelona, y estoy buscando trabajo presencial aquí en <span class=\"scndClr\">Barcelona</span> o en <span class=\"scndClr\">Madrid</span> y planeo mudarme como sea necesario.",
   "ABOUT_BODY2": "Tengo 4+ años de experiencia en la creación de sistemas en tiempo real, infraestructura backend y herramientas de desarrollo con grandes estudios de 100+ personas y pequeñas empresas emergentes. Estoy emocionado de colaborar con nuevos equipos y asumir nuevos desafíos.\n\nPor favor, contácteme en <a class=\"scndClr\" href=\"mailto:ahervella@me.com\">ahervella@me.com</a> sobre cualquier oportunidad laboral. ¡Espero su respuesta con mucha anticipación!",
-  "ABOUT_BODY3": "Español (nativo), Inglés (nativo), Francés (básico)",
+  "ABOUT_BODY3": "Español (nativo), Inglés (nativo)",
   "ABOUT_PRGM_LANGS": "Lenguajes de programación",
   "ABOUT_SPOKEN_LANGS": "Idiomas hablados",
   "ABOUT_TOOLS_TECH": "Herramientas",
+  "ABOUT_SYS_CONCEPTS": "Sistemas y Conceptos",
+  "ABOUT_SYS_CONCEPTS_BODY": "Sistemas de juego, RAII, gestión de memoria, optimización de rendimiento, redes, programación asíncrona, POO, MVC, máquinas de estados finitos, matemáticas y física 3D (colisiones, vectores, cuaterniones)",
+  "ABOUT_FAMILIAR": "Familiarizado",
+  "ABOUT_FAMILIAR_BODY": "Java, SQL, Linux/Unix, ensamblador (MIPS, x86-64), Bash, YAML, React.js, TypeScript, JavaScript, HTML, CSS",
   "ART_DIGITAL_BODY": "Estas son algunas de las pocas fotografías digitales que he realizado a lo largo de los años utilizando software digital.",
   "ART_DRAWINGS_BODY": "Estos son algunos de los dibujos que he hecho a lo largo de los años, la mayoría de ellos en cuadernos de bocetos aleatorios, algunos con más tiempo dedicado. ¡Me encanta dibujar naturaleza, personas, ciudades y todo lo relacionado con la ciencia ficción!"
 }
