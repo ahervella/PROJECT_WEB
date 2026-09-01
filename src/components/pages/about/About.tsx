@@ -13,7 +13,6 @@ import { AboutProgramLangEntry } from './AboutProgramLangEntry';
 
 import csharp from "$assets/skillsIcons/csharp.svg";
 import cpp from "$assets/skillsIcons/cpp.svg";
-import python from "$assets/skillsIcons/python.svg"
 import unity from "$assets/skillsIcons/unity.svg"
 import git from "$assets/skillsIcons/git.svg"
 import github from "$assets/skillsIcons/github.svg"
@@ -31,6 +30,7 @@ import cmake from "$assets/skillsIcons/cmake.svg"
 import gdb from "$assets/skillsIcons/gdb.svg"
 import addresssanitizer from "$assets/skillsIcons/addresssanitizer.svg"
 import vim from "$assets/skillsIcons/vim.svg"
+import linux from "$assets/skillsIcons/linux.svg"
 
 function About(){
 
@@ -55,7 +55,6 @@ function About(){
                 <AboutProgramLangEntry imgPath={csharp} locKey="C#" />
                 <AboutProgramLangEntry imgPath={c} locKey="C" />
                 <AboutProgramLangEntry imgPath={lua} locKey="Lua" />
-                <AboutProgramLangEntry imgPath={python} locKey="Python" />
             </InfoPageSectionGrid>
 
             <InfoPageSection subtitleLocKey='ABOUT_SYS_CONCEPTS' >
@@ -69,6 +68,7 @@ function About(){
                 <AboutProgramLangEntry imgPath={git} locKey="Git" />
                 <AboutProgramLangEntry imgPath={github} locKey="GitHub" />
                 <AboutProgramLangEntry imgPath={visualstudio} locKey="Visual Studio" />
+                <AboutProgramLangEntry imgPath={linux} locKey="Linux/Unix" />
                 <AboutProgramLangEntry imgPath={cmake} locKey="CMake" />
                 <AboutProgramLangEntry imgPath={gdb} locKey="GDB/LLDB" />
                 <AboutProgramLangEntry imgPath={addresssanitizer} locKey="AddressSanitizer" />

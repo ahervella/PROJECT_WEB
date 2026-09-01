@@ -71,7 +71,7 @@
   "ABOUT_SYS_CONCEPTS": "Sistemas y Conceptos",
   "ABOUT_SYS_CONCEPTS_BODY": "Sistemas de juego, RAII, gestión de memoria, optimización de rendimiento, redes, programación asíncrona, POO, MVC, máquinas de estados finitos, matemáticas y física 3D (colisiones, vectores, cuaterniones)",
   "ABOUT_FAMILIAR": "Familiarizado",
-  "ABOUT_FAMILIAR_BODY": "Java, SQL, Linux/Unix, ensamblador (MIPS, x86-64), Bash, YAML, React.js, TypeScript, JavaScript, HTML, CSS",
+  "ABOUT_FAMILIAR_BODY": "Java, Python, SQL, ensamblador (MIPS, x86-64), Bash, YAML, React.js, TypeScript, JavaScript, HTML, CSS",
   "ART_DIGITAL_BODY": "Estas son algunas de las pocas fotografías digitales que he realizado a lo largo de los años utilizando software digital.",
   "ART_DRAWINGS_BODY": "Estos son algunos de los dibujos que he hecho a lo largo de los años, la mayoría de ellos en cuadernos de bocetos aleatorios, algunos con más tiempo dedicado. ¡Me encanta dibujar naturaleza, personas, ciudades y todo lo relacionado con la ciencia ficción!"
 }
