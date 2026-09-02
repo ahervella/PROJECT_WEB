@@ -31,6 +31,8 @@ import gdb from "$assets/skillsIcons/gdb.svg"
 import addresssanitizer from "$assets/skillsIcons/addresssanitizer.svg"
 import vim from "$assets/skillsIcons/vim.svg"
 import linux from "$assets/skillsIcons/linux.svg"
+import googletest from "$assets/skillsIcons/googletest.svg"
+import googlebenchmark from "$assets/skillsIcons/googlebenchmark.svg"
 
 function About(){
 
@@ -72,6 +74,8 @@ function About(){
                 <AboutProgramLangEntry imgPath={cmake} locKey="CMake" />
                 <AboutProgramLangEntry imgPath={gdb} locKey="GDB/LLDB" />
                 <AboutProgramLangEntry imgPath={addresssanitizer} locKey="AddressSanitizer" />
+                <AboutProgramLangEntry imgPath={googletest} locKey="GoogleTest" />
+                <AboutProgramLangEntry imgPath={googlebenchmark} locKey="Google Benchmark" />
                 <AboutProgramLangEntry imgPath={unreal} locKey="Unreal Engine" />
                 <AboutProgramLangEntry imgPath={pico8} locKey="PICO-8" />
                 <AboutProgramLangEntry imgPath={godot} locKey="Godot Engine" />
